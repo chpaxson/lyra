@@ -1,0 +1,10 @@
+﻿"RotorRadius"= 62.5mm
+"Eccentricity"= 1.5mm
+"RollerRadius"= 2mm
+"RollerCount"= 25
+"RotorThickness"= 10mm
+"TTol"= 0.25mm
+"MainBearingThickness"= 7mm
+"OutputRollerRadius"= 2mm
+"OutputRollerCount"= 6
+"RotorGap"= 5mm
