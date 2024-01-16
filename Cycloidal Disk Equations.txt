@@ -1,5 +1,0 @@
-X Equation
-"RotorRadius"*cos(t)-"RollerRadius"*cos(t+arctan((sin((1-"RollerCount")*t))/(("RotorRadius"/("Eccentricity"*"RollerCount"))-cos((1-"RollerCount")*t))))-"Eccentricity"*cos("RollerCount"*t)
-
-Y Equation
--"RotorRadius"*sin(t)+"RollerRadius"*sin(t+arctan((sin((1-"RollerCount")*t))/(("RotorRadius"/("Eccentricity"*"RollerCount"))-cos((1-"RollerCount")*t))))+"Eccentricity"*sin("RollerCount"*t)
