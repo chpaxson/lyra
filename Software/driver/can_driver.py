@@ -1,26 +1,46 @@
 #!/usr/bin/env python
-
 import can, time
+from CANableBus import CANableBus
 
-motor_addresses = {1: 0x01, 2: 0x02}
-
-# bus = can.interface.Bus(bustype='slcan', channel='COM7', ttyBaudrate=2000000, bitrate=500000)
+bus = CANableBus()
 
 def main():
+    print("a")
     set_work_mode(1, "SR_vFOC")
-    set_working_current(1, 500)
+    set_work_mode(2, "SR_vFOC")
+    time.sleep(0.2)
+    set_microsteps(1, 16)
+    set_microsteps(2, 16)
+    time.sleep(0.2)
+    set_working_current(1, 1000)
+    set_working_current(2, 500)
+    time.sleep(0.2)
     set_holding_current_percent(1, 20)
+    set_holding_current_percent(2, 20)
+    time.sleep(0.2)
     enable_motor(1)
-    move_relative(1, "CW", 100, 0, 10000)
-    disable_motor(1)
+    enable_motor(2)
+    time.sleep(0.2)
+    # move_relative(1, "CCW", 1000, 100, 3000)
+    move_relative(2, "CW", 3000, 100, 3000)
+    # move_relative_revs(1, "CW", 3000, 0, 20)
+    move_absolute(1, 3000, 0, 0)
+    print(bus.read_input(1))
 
+def calculate_crc(arbitration_id, data: list) -> int:
+    crc = 0
+    for byte in data:
+        crc += byte
+    crc += arbitration_id
+    crc = crc & 0xFF
+    return crc
 
-def calibrate_encoder(motor):
-    bytes = [0x80, 0x00]
-    send_msg(motor, bytes)
+def send_msg(motor: int, data: list):
+    data.append(calculate_crc(motor, data)) # Calculate and append checksum
+    msg = can.Message(arbitration_id=motor, data=data, is_extended_id=False)
+    bus.send_message(msg)
 
 def set_work_mode(motor, mode):
-    
     if mode == "CR_OPEN": # Pulse interface, open loop
         mode_byte = 0x00
     elif mode == "CR_CLOSE": # Pulse interface, closed loop
@@ -39,15 +59,10 @@ def set_work_mode(motor, mode):
     bytes = [0x82, mode_byte]
     send_msg(motor, bytes)
 
-# Current is in mA
-# SERVO42D max is 3000mA
-# SERVO52D max is 5200mA
 def set_working_current(motor, current):
     # Split current (16 bit int) into two bytes and append to bytes list
     bytes = [0x83] + list(current.to_bytes(2, byteorder='big'))
-
     send_msg(motor, bytes)
-
 def set_holding_current_percent(motor, percent):
     percent = round(percent/10, 0)
     if percent < 1:
@@ -58,6 +73,15 @@ def set_holding_current_percent(motor, percent):
     bytes = [0x9B] + list(int(percent).to_bytes(1, byteorder='big'))
     send_msg(motor, bytes)
 
+def set_microsteps(motor, microsteps):
+    # Check that microsteps is a power of 2, up to 256.
+    if microsteps < 1 or microsteps > 256 or (microsteps & (microsteps - 1)) != 0:
+        print("Invalid microsteps")
+        return
+    microsteps -= 1
+    bytes = [0x84, microsteps]
+    send_msg(motor, bytes)
+
 def enable_motor(motor):
     bytes = [0x84, 0x01]
     send_msg(motor, bytes)
@@ -65,12 +89,8 @@ def disable_motor(motor):
     bytes = [0x84, 0x00]
     send_msg(motor, bytes)
 
-def estop(motor):
-    bytes = [0xF7]
-    send_msg(motor, bytes)
-
+# Manual page 39
 def move_relative(motor, dir, speed, accel, pulses):
-    bytes = [0xFD]
     # Direction is the first bit of the second byte
     # Speed is 12 bits long, starting at the 5th bit of the second byte and completing the third byte
     # Acceleration is the fourth byte
@@ -83,50 +103,21 @@ def move_relative(motor, dir, speed, accel, pulses):
     byte2 = byte2 | (speed >> 8)
     byte4 = accel
     pulse_bytes = pulses.to_bytes(3, byteorder='big')
-    bytes.append(byte2)
-    bytes.append(byte3)
-    bytes.append(byte4)
-    # print(byte2)
-    for byte in pulse_bytes:
-        bytes.append(int(byte))
-    # bytes += [byte2, byte3, byte4] + list(pulse_bytes)
+    bytes = [0xFD, byte2, byte3, byte4] + list(pulse_bytes)
     print(bytes)
-    # print(bytearray(bytes))
     send_msg(motor, bytes)
-    # time.sleep(10)
 
-    
-def append_crc(motor, input_bytes) -> bytearray:
-    input_bytes.append(motor_addresses[motor])
-    crc = 0x00
-    bytes = bytearray(input_bytes)
+# Manual page 41
+def move_absolute(motor, speed, accel, pulses):
+    speed_bytes = speed.to_bytes(2, byteorder='big')
+    pulse_bytes = pulses.to_bytes(3, byteorder='big')
+    bytes = [0xFE, speed_bytes[0], speed_bytes[1], accel] + list(pulse_bytes)
+    send_msg(motor, bytes)
 
-    for byte in bytes:
-        crc += byte
-    crc_byte = (crc & 0xFF).to_bytes(1, byteorder='big')
-    return input_bytes.append(crc_byte)
-
-def calculate_crc(motor, input_bytes):
-    input_bytes.append(motor_addresses[motor])
-    crc = 0x00
-    bytes = bytearray(input_bytes)
-    for byte in bytes:
-        crc += byte
-    return crc & 0xFF
-
-def send_msg(motor, bytes):
-    bytes = append_crc(motor, bytes)
-    msg = can.Message(arbitration_id=motor_addresses[motor], data=bytes, is_extended_id=False)
-    print(bytes)
-    try:
-        bus.send(msg)
-        # print("Message sent on {}".format(bus.channel_info))
-    except can.CanError:
-        print("Message NOT sent")
-    time.sleep(0.1)
+def move_relative_revs(motor, dir, speed, accel, revs):
+    pulses = revs * 200
+    move_relative(motor, dir, speed, accel, pulses)
 
 if __name__ == "__main__":
-    # main()
-    # print(calculate_crc([0x01, 0xF1]).to_bytes(1, byteorder='big'))
-    print(append_crc(1, [0xFD, 0x01, 0x40, 0x02, 0x00, 0xFA, 0x00]))
-    # bus.shutdown()
+    main()
+    bus.cleanup()
