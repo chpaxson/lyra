@@ -1,7 +1,7 @@
 ﻿"RotorRadius"= 20mm
 "Eccentricity"= 1mm
 "RollerRadius"= 1.5mm
-"RollerCount"= 15
+"RollerCount"= 16
 "RotorThickness"= 6mm
 "TTol"= 0.25mm
 "MainBearingThickness"= 4mm
