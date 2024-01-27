@@ -6,36 +6,37 @@ bus = CANableBus()
 
 def main():
     print("Starting movement test...")
-    set_work_mode(1, "SR_vFOC")
-    set_work_mode(2, "SR_vFOC")
-    time.sleep(0.2)
-    set_microsteps(1, 16)
-    set_microsteps(2, 16)
-    time.sleep(0.2)
-    print(bus.read_input(1))
-    print(bus.read_input(2))
-    set_working_current(1, 2000)
-    set_working_current(2, 2000)
-    time.sleep(0.2)
-    set_holding_current_percent(1, 20)
-    set_holding_current_percent(2, 20)
-    time.sleep(0.2)
-    enable_motor(1)
-    enable_motor(2)
-    time.sleep(0.2)
-    speed = 100
-    accel = 128
-    move_time1 = move_relative(1, "CCW", speed, accel, 3200)
-    move_time2 = move_relative(2, "CCW", speed, accel, 3200)
-    time.sleep(max(move_time1, move_time2) + 0.2)
-    move_time1 = move_relative(1, "CW", speed, accel, 3200)
-    move_time2 = move_relative(2, "CW", speed, accel, 3200)
-    time.sleep(max(move_time1, move_time2) + 0.2)
-    # move_absolute(1, 2000, 128, 0)
-    # move_absolute(2, 2000, 128, 0)
-    # time.sleep(10)
-    # disable_motor(1)
-    # disable_motor(2)
+    speed = 3000
+    accel = 50
+    pulses = 10000
+    # pulses = 0
+    set_working_current(1, 2800)
+    set_working_current(2, 4200)
+    set_working_current(3, 2800)
+    set_working_current(4, 1500)
+    set_working_current(5, 1500)
+    for i in range(1,6):
+        print("Setting up motor " + str(i))
+        set_work_mode(i, "SR_vFOC")
+        time.sleep(0.2)
+        set_microsteps(i, 16)
+        time.sleep(0.2)
+        set_holding_current_percent(i, 20)
+        time.sleep(0.2)
+        enable_motor(i)
+        time.sleep(0.2)
+        move_absolute(i, speed, accel, pulses)
+        time.sleep(0.2)
+    # move_relative(2, "CW", speed, accel, pulses)
+    # wait_for_available(2)
+    # move_relative(2, "CCW", speed*2, accel, 9600*2)
+    # wait_for_available(2)
+    # move_relative(2, "CW", speed, accel, pulses)
+    # wait_for_available(2)
+    # move_relative(2, "CCW", speed*2, accel, 9600*2)
+    # wait_for_available(2)
+    # move_relative(2, "CW", speed, accel, pulses)
+    
     print(bus.read_input(1))
 
 def calculate_crc(arbitration_id, data: list) -> int:
@@ -106,15 +107,21 @@ def disable_motor(motor):
     print("Motor " + str(motor) + " disabled")
 
 # Manual page 39
-def move_relative(motor, dir, speed, accel, pulses):
+def move_relative(motor: int, dir: int, speed: int, accel: int, pulses: int):
     # Direction is the first bit of the second byte
     # Speed is 12 bits long, starting at the 5th bit of the second byte and completing the third byte
     # Acceleration is the fourth byte
     # Pulses is 24 bits long, composing bytes 5, 6, and 7
+    speed = int(speed)
+    accel = int(accel)
+    pulses = int(pulses)
     if dir == "CW":
         byte2 = 0b10000000
     elif dir == "CCW":
         byte2 = 0b00000000
+    else:
+        print("Invalid direction")
+        return
     byte3 = speed & 0b000011111111
     byte2 = byte2 | (speed >> 8)
     byte4 = accel
@@ -126,11 +133,25 @@ def move_relative(motor, dir, speed, accel, pulses):
     return move_time
 
 # Manual page 41
-def move_absolute(motor, speed, accel, pulses):
+def move_absolute(motor: int, speed: int, accel: int, pulses: int):
     speed_bytes = speed.to_bytes(2, byteorder='big')
     pulse_bytes = pulses.to_bytes(3, byteorder='big')
     bytes = [0xFE, speed_bytes[0], speed_bytes[1], accel] + list(pulse_bytes)
     send_msg(motor, bytes)
+
+def wait_for_available(motor):
+    end_byte = 0x02
+    while True:
+        msg = bus.read_input(motor)
+        print(msg)
+        try:
+            if msg.data[1] is end_byte:
+                return
+        except:
+            print("No data, querying motor " + str(motor) + " status...")
+            send_msg(motor, [0xF1])
+            end_byte = 0x01
+        time.sleep(0.01)
 
 def estop(motor):
     bytes = [0xF7]
