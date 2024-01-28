@@ -8,8 +8,8 @@ def main():
     print("Starting movement test...")
     speed = 3000
     accel = 50
-    pulses = 10000
-    # pulses = 0
+    # pulses = 10000
+    pulses = 0
     set_working_current(1, 2800)
     set_working_current(2, 4200)
     set_working_current(3, 2800)
@@ -18,15 +18,15 @@ def main():
     for i in range(1,6):
         print("Setting up motor " + str(i))
         set_work_mode(i, "SR_vFOC")
-        time.sleep(0.2)
+        time.sleep(0.1)
         set_microsteps(i, 16)
-        time.sleep(0.2)
+        time.sleep(0.1)
         set_holding_current_percent(i, 20)
-        time.sleep(0.2)
+        time.sleep(0.1)
         enable_motor(i)
-        time.sleep(0.2)
+        time.sleep(0.1)
         move_absolute(i, speed, accel, pulses)
-        time.sleep(0.2)
+        time.sleep(0.1)
     # move_relative(2, "CW", speed, accel, pulses)
     # wait_for_available(2)
     # move_relative(2, "CCW", speed*2, accel, 9600*2)
