@@ -6,10 +6,10 @@ bus = CANableBus()
 
 def main():
     print("Starting movement test...")
-    speed = 3000
+    speed = 1000
     accel = 50
-    # pulses = 10000
-    pulses = 0
+    pulses = 50000
+    # pulses = 0
     set_working_current(1, 2800)
     set_working_current(2, 4200)
     set_working_current(3, 2800)
