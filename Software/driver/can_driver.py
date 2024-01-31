@@ -6,16 +6,16 @@ bus = CANableBus()
 
 def main():
     print("Starting movement test...")
-    speed = 1000
-    accel = 50
-    pulses = 50000
+    speed = 100
+    accel = 20
+    pulses = 100000
     # pulses = 0
     set_working_current(1, 2800)
     set_working_current(2, 4200)
     set_working_current(3, 2800)
     set_working_current(4, 1500)
     set_working_current(5, 1500)
-    for i in range(1,6):
+    for i in range(2,3):
         print("Setting up motor " + str(i))
         set_work_mode(i, "SR_vFOC")
         time.sleep(0.1)
