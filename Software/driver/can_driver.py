@@ -6,9 +6,9 @@ bus = CANableBus()
 
 def main():
     print("Starting movement test...")
-    speed = 100
-    accel = 20
-    pulses = 100000
+    speed = 2800
+    accel = 100
+    pulses = 1000
     # pulses = 0
     set_working_current(1, 2800)
     set_working_current(2, 4200)
@@ -19,14 +19,25 @@ def main():
         print("Setting up motor " + str(i))
         set_work_mode(i, "SR_vFOC")
         time.sleep(0.1)
-        set_microsteps(i, 16)
+        set_microsteps(i, 64)
         time.sleep(0.1)
         set_holding_current_percent(i, 20)
         time.sleep(0.1)
         enable_motor(i)
         time.sleep(0.1)
-        move_absolute(i, speed, accel, pulses)
-        time.sleep(0.1)
+        move_relative(2, "CCW", speed, accel, pulses)
+        wait_for_available(2)
+        move_relative(2, "CW", speed, accel, pulses)
+        wait_for_available(2)
+        move_relative(2, "CCW", speed, accel, pulses)
+        wait_for_available(2)
+        move_relative(2, "CW", speed, accel, pulses)
+        wait_for_available(2)
+        move_relative(2, "CCW", speed, accel, pulses)
+        wait_for_available(2)
+        move_relative(2, "CW", speed, accel, pulses)
+        wait_for_available(2)
+        move_absolute(2, speed, accel, 0)
     # move_relative(2, "CW", speed, accel, pulses)
     # wait_for_available(2)
     # move_relative(2, "CCW", speed*2, accel, 9600*2)
@@ -86,7 +97,7 @@ def set_holding_current_percent(motor, percent):
     percent -= 1
     bytes = [0x9B] + list(int(percent).to_bytes(1, byteorder='big'))
     send_msg(motor, bytes)
-    print("Motor " + str(motor) + " holding current percent set to " + str(percent*10))
+    print("Motor " + str(motor) + " holding current percent set to " + str(percent*10+10))
 
 def set_microsteps(motor, microsteps):
     # Check that microsteps is a power of 2, up to 256.
