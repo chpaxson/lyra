@@ -1,5 +1,5 @@
-"ringGearToothCount" = 138
-"sunGearToothCount" = 18
+"ringGearToothCount" = 120
+"sunGearToothCount" = 42
 "planetGearToothCount" = ("ringGearToothCount" - "sunGearToothCount") / 2
 "faceWidth" = 25mm
 "module" = 1
@@ -23,7 +23,7 @@
 "dedendumRadius" = "dedendumDiameter" / 2
 "rootDiameter" = "dedendumDiameter" - 2 * "rootClearance"
 "rootRadius" = "rootDiameter" / 2
-"dedendumFilletRadius" = "rootClearance" * cos("pressureAngle") * tan((90 + "pressureAngle") / 2)
+"dedendumFilletRadius" = abs("rootClearance") * cos("pressureAngle") * tan((90 + "pressureAngle") / 2)
 
 "alpha" = sqr("pitchDiameter"^2 - "baseDiameter"^2) / "baseDiameter" * 180 / PI - "pressureAngle"
 "beta" = "pitchAngle" / 4 - "alpha"

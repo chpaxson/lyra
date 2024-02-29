@@ -4,17 +4,10 @@ Ring Gear: 120 teeth
 
 https://khkgears.net/new/gear_knowledge/gear_technical_reference/involute_gear_profile.html
 
-x:
-r = "module" * "toothCount" / 2
-x = "module" * "toothCount" * cos(tan(t) - t) / 2
-y = "module" * "toothCount" * sin(tan(t) - t) / 2
-
 Top involute equations
 x = "baseRadius" * (cos(t + "betaR") + t * sin(t + "betaR"))
 y = "baseRadius" * (sin(t + "betaR") - t * cos(t + "betaR"))
 
 Bottom involute equations
-x = "baseRadius" * (cos(t - "betaR") - t * sin(t - "betaR"))
-y = "baseRadius" * (sin(t - "betaR") + t * cos(t - "betaR"))
-
-= 90/"toothCount" - sqr("pitchDiameter"^2-4 * "baseCircleRadius"^2)* 180 / (2 * pi * "baseCircleRadius") + "pressureAngle"
+x = "baseRadius" * (cos(-t - "betaR") - t * sin(-t - "betaR"))
+y = "baseRadius" * (sin(-t - "betaR") + t * cos(-t - "betaR"))
