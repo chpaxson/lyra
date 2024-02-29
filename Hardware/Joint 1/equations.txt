@@ -1,0 +1,34 @@
+"ringGearToothCount" = 138
+"sunGearToothCount" = 18
+"planetGearToothCount" = ("ringGearToothCount" - "sunGearToothCount") / 2
+"faceWidth" = 25mm
+"module" = 1
+"pressureAngle" = 20deg
+
+"toothCount" = "planetGearToothCount"
+"pitchAngle" = 360deg / "toothCount"
+
+"pitchDiameter" = "module" * "toothCount"
+"pitchRadius" = "pitchDiameter" / 2
+"baseDiameter" = "pitchDiameter" * cos("pressureAngle")
+"baseRadius" = "baseDiameter" / 2
+
+"addendum" = 1.0 * "module"
+"dedendum" = 1.25 * "module"
+"rootClearance" = 0.25 * "module"
+
+"addendumDiameter" = "pitchDiameter" + 2 * "addendum"
+"addendumRadius" = "addendumDiameter" / 2
+"dedendumDiameter" = "pitchDiameter" - 2 * "dedendum"
+"dedendumRadius" = "dedendumDiameter" / 2
+"rootDiameter" = "dedendumDiameter" - 2 * "rootClearance"
+"rootRadius" = "rootDiameter" / 2
+"dedendumFilletRadius" = "rootClearance" * cos("pressureAngle") * tan((90 + "pressureAngle") / 2)
+
+"alpha" = sqr("pitchDiameter"^2 - "baseDiameter"^2) / "baseDiameter" * 180 / PI - "pressureAngle"
+"beta" = "pitchAngle" / 4 - "alpha"
+"phi" = sqr("addendumRadius"^2 - "baseRadius"^2) / "baseRadius"
+"betaR" = "beta" * PI / 180
+
+
+
