@@ -1,0 +1,3 @@
+Sun Gear: 15 teeth
+Planet Gears: 52 teeth
+Ring Gear: 120 teeth
