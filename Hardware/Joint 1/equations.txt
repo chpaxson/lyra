@@ -1,8 +1,8 @@
 "ringGearToothCount" = 120
 "sunGearToothCount" = 36
 "planetGearToothCount" = ("ringGearToothCount" - "sunGearToothCount") / 2
-"sunGear2Toothcount" = 90
-"motorGearToothcount" = 20
+"sunGear2Toothcount" = 96
+"motorGearToothcount" = 26
 "faceWidth" = 25mm
 "faceWidth2" = 15mm
 "module" = 1.05
