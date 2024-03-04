@@ -1,4 +1,0 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "arduino-library")(type "KiCad")(uri "C:/Users/chpax/Documents/Projects/Lyra (ME102B Project)/Hardware/Electronics Models/Arduino Due Shield/arduino-library/symbols/arduino-library.kicad_sym")(options "")(descr ""))
-)
