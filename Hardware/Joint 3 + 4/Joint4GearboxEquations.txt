@@ -1,4 +1,4 @@
-"motorToothCount" = 60
+"motorToothCount" = 65
 "housingToothCount" = 80
 "faceWidth" = 10mm
 "module" = 1

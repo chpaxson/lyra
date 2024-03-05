@@ -11,3 +11,12 @@ y = "baseRadius" * (sin(t + "betaR") - t * cos(t + "betaR"))
 Bottom involute equations
 x = "baseRadius" * (cos(-t - "betaR") - t * sin(-t - "betaR"))
 y = "baseRadius" * (sin(-t - "betaR") + t * cos(-t - "betaR"))
+
+Joint 4:
+Top involute equations
+x = "baseRadius" * (cos(t + "betaR") + t * sin(t + "betaR")) - 105
+y = "baseRadius" * (sin(t + "betaR") - t * cos(t + "betaR")) + 14.25
+
+Bottom involute equations
+x = "baseRadius" * (cos(-t - "betaR") - t * sin(-t - "betaR")) - 105
+y = "baseRadius" * (sin(-t - "betaR") + t * cos(-t - "betaR")) + 14.25
