@@ -1,0 +1,14 @@
+Right involute
+"dbv"*(sin(t)-t*cos(t))/2
+"dbv"*(cos(t)+t*sin(t))/2
+Left involute
+"dbv"*(sin(-t)+t*cos(-t))/2
+"dbv"*(cos(-t)-t*sin(-t))/2
+
+Top involute equations
+"virtBaseDiam"/2 * (sin(t + "halfToothAngle") - t * cos(t + "halfToothAngle")
+-"virtBaseDiam"/2 * (cos(t + "halfToothAngle") + t * sin(t + "halfToothAngle"))+"virtPitchDiam"/2
+
+Bottom involute equations
+"virtBaseDiam"/2 * (sin(-t - "halfToothAngle") + t * cos(-t - "halfToothAngle"))
+-"virtBaseDiam"/2 * (cos(-t - "halfToothAngle") - t * sin(-t - "halfToothAngle"))+"virtPitchDiam"/2
