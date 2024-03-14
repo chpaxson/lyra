@@ -729,14 +729,14 @@
     )
   )
 
-  (sheet (at 115.57 58.42) (size 12.7 3.81) (fields_autoplaced)
+  (sheet (at 95.25 19.05) (size 12.7 3.81) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
     (fill (color 0 0 0 0.0000))
     (uuid 1af119c3-7c67-4253-a987-5e4038b04e95)
-    (property "Sheetname" "Stepper Driver" (at 115.57 57.7084 0)
+    (property "Sheetname" "Stepper Driver" (at 95.25 18.3384 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheetfile" "stepper.kicad_sch" (at 115.57 62.8146 0)
+    (property "Sheetfile" "stepper.kicad_sch" (at 95.25 23.4446 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
@@ -776,6 +776,23 @@
     (instances
       (project "Toolhead Board"
         (path "/a1747683-152e-4245-ab61-2d33ce6021ef" (page "3"))
+      )
+    )
+  )
+
+  (sheet (at 100.33 35.56) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid fe3b39b1-861f-4ade-961f-d72da0b86b52)
+    (property "Sheetname" "Load Cell Amplifiers" (at 100.33 34.8484 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "amps.kicad_sch" (at 100.33 39.9546 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Toolhead Board"
+        (path "/a1747683-152e-4245-ab61-2d33ce6021ef" (page "5"))
       )
     )
   )

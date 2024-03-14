@@ -330,6 +330,14 @@
     [
       "7a176770-cfe4-4868-94bc-3ecfd4aba1fe",
       "Microcontroller"
+    ],
+    [
+      "ddf7d789-b89f-4838-a0de-61c290d748de",
+      "CAN IO"
+    ],
+    [
+      "1af119c3-7c67-4253-a987-5e4038b04e95",
+      "Stepper Driver"
     ]
   ],
   "text_variables": {}
