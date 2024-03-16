@@ -456,14 +456,6 @@
           (name "VDDIO" (effects (font (size 1.27 1.27))))
           (number "5" (effects (font (size 1.27 1.27))))
         )
-        (pin power_out line (at 0 -12.7 0) (length 7.62)
-          (name "GNDIO" (effects (font (size 1.27 1.27))))
-          (number "6" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_out line (at 0 -15.24 0) (length 7.62)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "7" (effects (font (size 1.27 1.27))))
-        )
         (pin power_in line (at 40.64 -15.24 180) (length 7.62)
           (name "VDD" (effects (font (size 1.27 1.27))))
           (number "8" (effects (font (size 1.27 1.27))))
@@ -471,6 +463,16 @@
         (pin bidirectional line (at 40.64 -12.7 180) (length 7.62)
           (name "INT2" (effects (font (size 1.27 1.27))))
           (number "9" (effects (font (size 1.27 1.27))))
+        )
+      )
+      (symbol "BMI270_1_1"
+        (pin power_in line (at 0 -12.7 0) (length 7.62)
+          (name "GNDIO" (effects (font (size 1.27 1.27))))
+          (number "6" (effects (font (size 1.27 1.27))))
+        )
+        (pin power_in line (at 0 -15.24 0) (length 7.62)
+          (name "GND" (effects (font (size 1.27 1.27))))
+          (number "7" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -585,7 +587,7 @@
   (symbol (lib_id "power:GND") (at 59.69 58.42 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2f1ee07e-b1ce-402b-8331-04301f41e539)
-    (property "Reference" "#PWR074" (at 53.34 58.42 0)
+    (property "Reference" "#PWR099" (at 53.34 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 55.88 58.42 90)
@@ -601,7 +603,7 @@
     (instances
       (project "Toolhead Board"
         (path "/a1747683-152e-4245-ab61-2d33ce6021ef/7be2b1b8-8861-4283-9878-3fb2e6cb9107"
-          (reference "#PWR074") (unit 1)
+          (reference "#PWR099") (unit 1)
         )
       )
     )
@@ -675,6 +677,9 @@
     (property "Datasheet" "~" (at 140.97 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Digikey" "1276-1935-1-ND" (at 140.97 49.53 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid d970746c-27c8-4a24-9eba-ba80db00711c))
     (pin "2" (uuid 45e5b62a-7856-458a-9f56-522c75590ef3))
     (instances
@@ -701,6 +706,9 @@
     (property "Datasheet" "BMI270" (at 62.23 43.18 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
+    (property "Digikey" "828-1091-1-ND" (at 62.23 43.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 15a509f2-6d7a-42b2-9536-490fe23f9aa3))
     (pin "10" (uuid 07235e42-1e17-45a0-bc7e-8d6964db16e9))
     (pin "11" (uuid ce8b8261-ecb6-47da-a569-a9c23769ea43))
@@ -711,10 +719,10 @@
     (pin "3" (uuid 39c0e02d-3a98-462d-a364-fd033922a197))
     (pin "4" (uuid 3f4218f4-9461-4fab-b1ac-1e5bb781156f))
     (pin "5" (uuid d7d577ef-2fc1-4d5f-ad20-594a1f8551d2))
-    (pin "6" (uuid 10766ebc-7482-4a78-84b3-5dbb72eb7731))
-    (pin "7" (uuid 2ecda386-36d7-497e-ae16-741cd465a830))
     (pin "8" (uuid a091cc06-a460-447f-828c-14279df3198f))
     (pin "9" (uuid 89e98c79-315f-48c2-9260-b867a88cd68a))
+    (pin "6" (uuid 10766ebc-7482-4a78-84b3-5dbb72eb7731))
+    (pin "7" (uuid 2ecda386-36d7-497e-ae16-741cd465a830))
     (instances
       (project "Toolhead Board"
         (path "/a1747683-152e-4245-ab61-2d33ce6021ef/7be2b1b8-8861-4283-9878-3fb2e6cb9107"
@@ -727,16 +735,19 @@
   (symbol (lib_id "Device:R") (at 119.38 38.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5e26f017-4f4f-4d2c-bcfd-304054cad5b7)
-    (property "Reference" "R39" (at 121.92 36.83 0)
+    (property "Reference" "R40" (at 121.92 36.83 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "2.2k" (at 121.92 39.37 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 117.602 38.1 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 117.602 38.1 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 119.38 38.1 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Digikey" "1292-WR06X103JTLCT-ND" (at 119.38 38.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 3f145eac-9448-42e0-b9da-4aa62c185954))
@@ -744,7 +755,7 @@
     (instances
       (project "Toolhead Board"
         (path "/a1747683-152e-4245-ab61-2d33ce6021ef/7be2b1b8-8861-4283-9878-3fb2e6cb9107"
-          (reference "R39") (unit 1)
+          (reference "R40") (unit 1)
         )
       )
     )
@@ -753,7 +764,7 @@
   (symbol (lib_id "power:+3.3V") (at 41.91 35.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 717ab744-8f4f-4bff-a9f3-9b2441da097c)
-    (property "Reference" "#PWR079" (at 41.91 39.37 0)
+    (property "Reference" "#PWR094" (at 41.91 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 41.91 30.48 0)
@@ -769,7 +780,7 @@
     (instances
       (project "Toolhead Board"
         (path "/a1747683-152e-4245-ab61-2d33ce6021ef/7be2b1b8-8861-4283-9878-3fb2e6cb9107"
-          (reference "#PWR079") (unit 1)
+          (reference "#PWR094") (unit 1)
         )
       )
     )
@@ -784,10 +795,13 @@
     (property "Value" "10k" (at 39.37 48.26 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 43.688 46.99 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 43.688 46.99 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 41.91 46.99 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Digikey" "1292-WR06X103JTLCT-ND" (at 41.91 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 75713789-056a-4a53-a4d1-597879a17887))
@@ -804,7 +818,7 @@
   (symbol (lib_id "power:+3.3V") (at 140.97 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 89541754-fdb0-4a83-bf08-4e798581eb45)
-    (property "Reference" "#PWR077" (at 140.97 49.53 0)
+    (property "Reference" "#PWR095" (at 140.97 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 140.97 40.64 0)
@@ -820,7 +834,7 @@
     (instances
       (project "Toolhead Board"
         (path "/a1747683-152e-4245-ab61-2d33ce6021ef/7be2b1b8-8861-4283-9878-3fb2e6cb9107"
-          (reference "#PWR077") (unit 1)
+          (reference "#PWR095") (unit 1)
         )
       )
     )
@@ -829,7 +843,7 @@
   (symbol (lib_id "power:+3.3V") (at 105.41 58.42 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b3b4cce5-c746-4886-aa8e-1565063b6f2b)
-    (property "Reference" "#PWR076" (at 101.6 58.42 0)
+    (property "Reference" "#PWR0100" (at 101.6 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 109.22 58.42 90)
@@ -845,7 +859,7 @@
     (instances
       (project "Toolhead Board"
         (path "/a1747683-152e-4245-ab61-2d33ce6021ef/7be2b1b8-8861-4283-9878-3fb2e6cb9107"
-          (reference "#PWR076") (unit 1)
+          (reference "#PWR0100") (unit 1)
         )
       )
     )
@@ -854,7 +868,7 @@
   (symbol (lib_id "power:+3.3V") (at 59.69 53.34 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c130cb68-210c-40a4-b0b6-19ceb3583992)
-    (property "Reference" "#PWR075" (at 63.5 53.34 0)
+    (property "Reference" "#PWR097" (at 63.5 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 55.88 53.34 90)
@@ -870,7 +884,7 @@
     (instances
       (project "Toolhead Board"
         (path "/a1747683-152e-4245-ab61-2d33ce6021ef/7be2b1b8-8861-4283-9878-3fb2e6cb9107"
-          (reference "#PWR075") (unit 1)
+          (reference "#PWR097") (unit 1)
         )
       )
     )
@@ -879,7 +893,7 @@
   (symbol (lib_id "power:GND") (at 41.91 50.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cce5afa3-72a5-4cc9-9883-3dbdf516280d)
-    (property "Reference" "#PWR080" (at 41.91 57.15 0)
+    (property "Reference" "#PWR096" (at 41.91 57.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 41.91 55.88 0)
@@ -895,7 +909,7 @@
     (instances
       (project "Toolhead Board"
         (path "/a1747683-152e-4245-ab61-2d33ce6021ef/7be2b1b8-8861-4283-9878-3fb2e6cb9107"
-          (reference "#PWR080") (unit 1)
+          (reference "#PWR096") (unit 1)
         )
       )
     )
@@ -904,16 +918,19 @@
   (symbol (lib_id "Device:R") (at 104.14 38.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d0cdc4e6-f0fc-4074-801f-ddaba3abfbc1)
-    (property "Reference" "R40" (at 106.68 36.83 0)
+    (property "Reference" "R39" (at 106.68 36.83 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "2.2k" (at 106.68 39.37 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 102.362 38.1 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 102.362 38.1 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 104.14 38.1 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Digikey" "1292-WR06X103JTLCT-ND" (at 104.14 38.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid b22894b3-cc32-4e4b-9e0b-c0c3f4d88ea2))
@@ -921,7 +938,7 @@
     (instances
       (project "Toolhead Board"
         (path "/a1747683-152e-4245-ab61-2d33ce6021ef/7be2b1b8-8861-4283-9878-3fb2e6cb9107"
-          (reference "R40") (unit 1)
+          (reference "R39") (unit 1)
         )
       )
     )
@@ -930,7 +947,7 @@
   (symbol (lib_id "power:GND") (at 140.97 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f2f5d91a-39c6-4a15-9ca4-1681cc199049)
-    (property "Reference" "#PWR078" (at 140.97 59.69 0)
+    (property "Reference" "#PWR098" (at 140.97 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 140.97 58.42 0)
@@ -946,7 +963,7 @@
     (instances
       (project "Toolhead Board"
         (path "/a1747683-152e-4245-ab61-2d33ce6021ef/7be2b1b8-8861-4283-9878-3fb2e6cb9107"
-          (reference "#PWR078") (unit 1)
+          (reference "#PWR098") (unit 1)
         )
       )
     )
@@ -955,7 +972,7 @@
   (symbol (lib_id "power:+3.3V") (at 111.76 22.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f8215575-ce13-4fcf-87e7-c83c65050e90)
-    (property "Reference" "#PWR073" (at 111.76 26.67 0)
+    (property "Reference" "#PWR093" (at 111.76 26.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 111.76 17.78 0)
@@ -971,7 +988,7 @@
     (instances
       (project "Toolhead Board"
         (path "/a1747683-152e-4245-ab61-2d33ce6021ef/7be2b1b8-8861-4283-9878-3fb2e6cb9107"
-          (reference "#PWR073") (unit 1)
+          (reference "#PWR093") (unit 1)
         )
       )
     )

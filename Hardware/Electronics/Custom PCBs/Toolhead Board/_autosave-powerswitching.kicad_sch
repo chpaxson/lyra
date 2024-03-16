@@ -1,0 +1,18 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 526a20d8-84c3-4782-96d5-f24cb57c82d3)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (text_box "We want to have 24V switched power but are unsure of how to choose/wire a MOSFET for this purpose.  We'll ask at our next lecture."
+    (at 48.26 31.75 0) (size 54.61 16.51)
+    (stroke (width 0) (type default))
+    (fill (type none))
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid 1bf2aa6a-a77a-4754-bc95-17467bd21dd5)
+  )
+)

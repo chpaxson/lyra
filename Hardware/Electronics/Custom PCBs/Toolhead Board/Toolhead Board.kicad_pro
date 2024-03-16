@@ -313,7 +313,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "../../../../../../../Downloads/",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
@@ -346,6 +346,10 @@
     [
       "7be2b1b8-8861-4283-9878-3fb2e6cb9107",
       "Accelerometer"
+    ],
+    [
+      "4201403b-dc36-4412-bdb4-f9b94222c09e",
+      "PWM"
     ]
   ],
   "text_variables": {}
