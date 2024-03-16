@@ -338,6 +338,10 @@
     [
       "1af119c3-7c67-4253-a987-5e4038b04e95",
       "Stepper Driver"
+    ],
+    [
+      "fe3b39b1-861f-4ade-961f-d72da0b86b52",
+      "Load Cell Amplifiers"
     ]
   ],
   "text_variables": {}
