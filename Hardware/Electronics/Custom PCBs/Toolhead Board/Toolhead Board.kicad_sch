@@ -836,6 +836,23 @@
     )
   )
 
+  (sheet (at 48.26 31.75) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 7be2b1b8-8861-4283-9878-3fb2e6cb9107)
+    (property "Sheetname" "Accelerometer" (at 48.26 31.0384 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "accel.kicad_sch" (at 48.26 36.1446 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Toolhead Board"
+        (path "/a1747683-152e-4245-ab61-2d33ce6021ef" (page "6"))
+      )
+    )
+  )
+
   (sheet (at 20.32 19.05) (size 12.7 3.81) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
     (fill (color 0 0 0 0.0000))
@@ -853,14 +870,14 @@
     )
   )
 
-  (sheet (at 100.33 35.56) (size 12.7 3.81) (fields_autoplaced)
+  (sheet (at 20.32 31.75) (size 12.7 3.81) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
     (fill (color 0 0 0 0.0000))
     (uuid fe3b39b1-861f-4ade-961f-d72da0b86b52)
-    (property "Sheetname" "Load Cell Amplifiers" (at 100.33 34.8484 0)
+    (property "Sheetname" "Load Cell Amplifiers" (at 20.32 31.0384 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheetfile" "amps.kicad_sch" (at 100.33 39.9546 0)
+    (property "Sheetfile" "amps.kicad_sch" (at 20.32 36.1446 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
