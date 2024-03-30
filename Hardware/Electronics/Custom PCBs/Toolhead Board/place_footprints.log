@@ -1,0 +1,48 @@
+03-29 23:29:55 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 647:Plugin executed on: 'win32'
+03-29 23:29:55 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 648:Plugin executed with python version: '3.11.5 (main, Jan 19 2024, 08:13:45) [MSC v.1936 64 bit (AMD64)]'
+03-29 23:29:55 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 649:KiCad build version: 8.0.1
+03-29 23:29:55 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 650:Plugin version: 3.0.0
+03-29 23:29:55 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 651:Frame repr: <wx._core.Frame object at 0x000001B954D2FC70>
+03-29 23:29:55 com_github_MitjaNemec_PlaceFootprints.place_footprints 121:getting a list of all footprints on board
+03-29 23:29:55 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint H9 on root level
+03-29 23:29:55 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint H8 on root level
+03-29 23:29:55 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint H7 on root level
+03-29 23:29:55 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint H6 on root level
+03-29 23:29:55 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint H5 on root level
+03-29 23:29:55 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint H4 on root level
+03-29 23:29:55 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint H3 on root level
+03-29 23:29:55 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint H2 on root level
+03-29 23:29:55 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint H1 on root level
+03-29 23:29:55 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint TP4 on root level
+03-29 23:29:55 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint C2 on root level
+03-29 23:29:55 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint C1 on root level
+03-29 23:29:55 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint C3 on root level
+03-29 23:29:55 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint U1 on root level
+03-29 23:29:55 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint TP1 on root level
+03-29 23:29:55 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint TP5 on root level
+03-29 23:29:55 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint TP3 on root level
+03-29 23:29:55 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint C4 on root level
+03-29 23:29:55 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint TP2 on root level
+03-29 23:29:55 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint U2 on root level
+03-29 23:29:55 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint TP6 on root level
+03-29 23:29:56 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 830:Reference designator is: H
+03-29 23:29:56 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 831:Reference number is: 1
+03-29 23:29:56 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 863:Sorted and filtered list:
+['H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'H7', 'H8', 'H9']
+03-29 23:29:56 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 359:wx.Colour(240, 240, 240, 255)
+03-29 23:30:00 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 490:'12.5'
+03-29 23:30:00 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 542:Preparing config for reference circular
+03-29 23:30:00 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 556:Saving config file
+03-29 23:30:00 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 558:Saved the config file
+03-29 23:30:00 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 901:Footprints to place:
+['H1', 'H2', 'H3']
+03-29 23:30:00 com_github_MitjaNemec_PlaceFootprints.place_footprints 330:Starting placing with circular layout
+03-29 23:30:00 com_github_MitjaNemec_PlaceFootprints.place_footprints 340:reference footprint position at: VECTOR2I(75000000, 62500000)
+03-29 23:30:00 com_github_MitjaNemec_PlaceFootprints.place_footprints 345:rotation center at: (75000000, 75000000.0)
+03-29 23:30:00 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: H1 has property "Keep upright" rotation might not look as intended
+03-29 23:30:00 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: H1 has property "Keep upright" rotation might not look as intended
+03-29 23:30:00 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: H1 has property "Keep upright" rotation might not look as intended
+03-29 23:30:00 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: H1 has property "Keep upright" rotation might not look as intended
+03-29 23:30:00 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: H1 has property "Keep upright" rotation might not look as intended
+03-29 23:30:00 com_github_MitjaNemec_PlaceFootprints.place_footprints 477:Text of: H1 has property "Keep upright" rotation might not look as intended
+03-29 23:30:00 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 916:Placing complete

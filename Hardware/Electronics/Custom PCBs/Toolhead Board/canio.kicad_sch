@@ -1931,7 +1931,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "08ff4106-d359-4455-b723-a96d1cedafaa")
-		(property "Reference" "J8"
+		(property "Reference" "J12"
 			(at 128.27 64.77 90)
 			(effects
 				(font
@@ -1994,7 +1994,7 @@
 		(instances
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
-					(reference "J8")
+					(reference "J12")
 					(unit 1)
 				)
 			)
@@ -2440,7 +2440,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "783c9550-ee5b-4f14-81ef-3776211a60bf")
-		(property "Reference" "J6"
+		(property "Reference" "J10"
 			(at 27.94 31.75 0)
 			(effects
 				(font
@@ -2501,7 +2501,7 @@
 		(instances
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
-					(reference "J6")
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -3329,7 +3329,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f0feb500-dc59-48da-84e1-c813a4b06f4a")
-		(property "Reference" "J7"
+		(property "Reference" "J11"
 			(at 27.94 50.8 0)
 			(effects
 				(font
@@ -3390,7 +3390,7 @@
 		(instances
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
-					(reference "J7")
+					(reference "J11")
 					(unit 1)
 				)
 			)

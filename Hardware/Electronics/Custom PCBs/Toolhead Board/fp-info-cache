@@ -1,4 +1,4 @@
-23126713149581668
+23128424913413405
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -94737,6 +94737,13 @@ Varistor VF
 0
 2
 2
+lib
+WDFN-8-1EP_6x5mm_P1.27mm_EP3.4x4mm_No_Center_Pad
+WDFN, 8 Pin (http://ww1.microchip.com/downloads/en/DeviceDoc/8L_WDFN_5x6mm_MF_C04210B.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+WDFN NoLead
+0
+8
+8
 usb_port
 12402012E212A_AMP
 

@@ -5544,7 +5544,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "lib:WDFN-8-1EP_6x5mm_P1.27mm_EP3.4x4mm_No_Center_Pad"
 			(at 168.91 40.64 0)
 			(effects
 				(font
@@ -7278,7 +7278,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "lib:WDFN-8-1EP_6x5mm_P1.27mm_EP3.4x4mm_No_Center_Pad"
 			(at 168.91 54.61 0)
 			(effects
 				(font
