@@ -1,1526 +1,3487 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid 5bd3d9ef-0a2c-4ae1-b525-eb82ebdffc6f)
-
-  (paper "A4")
-
-  (lib_symbols
-    (symbol "Connector_Generic:Conn_01x02" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "J" (at 0 2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "Conn_01x02" (at 0 -5.08 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "connector" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Conn_01x02_1_1"
-        (rectangle (start -1.27 -2.413) (end 0 -2.667)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 0.127) (end 0 -0.127)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 1.27) (end 1.27 -3.81)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-        (pin passive line (at -5.08 0 0) (length 3.81)
-          (name "Pin_1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 -2.54 0) (length 3.81)
-          (name "Pin_2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Device:C" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
-      (property "Reference" "C" (at 0.635 2.54 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "C" (at 0.635 -2.54 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Footprint" "" (at 0.9652 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "cap capacitor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Unpolarized capacitor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "C_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "C_0_1"
-        (polyline
-          (pts
-            (xy -2.032 -0.762)
-            (xy 2.032 -0.762)
-          )
-          (stroke (width 0.508) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -2.032 0.762)
-            (xy 2.032 0.762)
-          )
-          (stroke (width 0.508) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "C_1_1"
-        (pin passive line (at 0 3.81 270) (length 2.794)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -3.81 90) (length 2.794)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "R" (at 2.032 0 90)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "R" (at 0 0 90)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at -1.778 0 90)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "R res resistor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Resistor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "R_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "R_0_1"
-        (rectangle (start -1.016 -2.54) (end 1.016 2.54)
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "R_1_1"
-        (pin passive line (at 0 3.81 270) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -3.81 90) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Interface_CAN_LIN:SN65HVD1050D" (in_bom yes) (on_board yes)
-      (property "Reference" "U" (at -8.89 8.89 0)
-        (effects (font (size 1.27 1.27)) (justify right))
-      )
-      (property "Value" "SN65HVD1050D" (at 1.27 8.89 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (at 0 -12.7 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn65hvd1050.pdf" (at -2.54 10.16 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "can transceiver ti canbus" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "CAN Bus Transceiver, EMC optimised, 5.0V, 1Mbps, SOIC-8" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "SN65HVD1050D_0_1"
-        (rectangle (start -10.16 7.62) (end 10.16 -7.62)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-      )
-      (symbol "SN65HVD1050D_1_1"
-        (pin input line (at -12.7 5.08 0) (length 2.54)
-          (name "TXD" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 0 -10.16 90) (length 2.54)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 0 10.16 270) (length 2.54)
-          (name "VCC" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin output line (at -12.7 2.54 0) (length 2.54)
-          (name "RXD" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 12.7 0 180) (length 2.54)
-          (name "VREF" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 12.7 -2.54 180) (length 2.54)
-          (name "CANL" (effects (font (size 1.27 1.27))))
-          (number "6" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 12.7 2.54 180) (length 2.54)
-          (name "CANH" (effects (font (size 1.27 1.27))))
-          (number "7" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at -12.7 -5.08 0) (length 2.54)
-          (name "S" (effects (font (size 1.27 1.27))))
-          (number "8" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "power:+24V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "+24V" (at 0 3.556 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global power" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"+24V\"" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "+24V_0_1"
-        (polyline
-          (pts
-            (xy -0.762 1.27)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 0.762 1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "+24V_1_1"
-        (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+24V" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "power:+5V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "+5V" (at 0 3.556 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global power" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"+5V\"" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "+5V_0_1"
-        (polyline
-          (pts
-            (xy -0.762 1.27)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 0.762 1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "+5V_1_1"
-        (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+5V" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -6.35 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "GND" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global power" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "GND_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 -1.27)
-            (xy 1.27 -1.27)
-            (xy 0 -2.54)
-            (xy -1.27 -1.27)
-            (xy 0 -1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "GND_1_1"
-        (pin power_in line (at 0 0 270) (length 0) hide
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "symbols:PESD1CAN_215" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
-      (property "Reference" "CR1" (at 11.43 7.62 0)
-        (effects (font (size 1.524 1.524)))
-      )
-      (property "Value" "PESD1CAN_215" (at 11.43 5.08 0)
-        (effects (font (size 1.524 1.524)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27) italic) hide)
-      )
-      (property "Datasheet" "PESD1CAN_215" (at 0 0 0)
-        (effects (font (size 1.27 1.27) italic) hide)
-      )
-      (property "Digikey" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_locked" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "ki_keywords" "PESD1CAN,215" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "SOT23_PESD1_NEX SOT23_PESD1_NEX-M SOT23_PESD1_NEX-L" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "PESD1CAN_215_0_1"
-        (polyline
-          (pts
-            (xy 7.62 -7.62)
-            (xy 15.24 -7.62)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 7.62 -5.08)
-            (xy 8.636 -5.08)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 7.62 0)
-            (xy 8.636 0)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 7.62 2.54)
-            (xy 7.62 -7.62)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 8.636 -5.842)
-            (xy 8.636 -4.318)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 8.636 -5.842)
-            (xy 8.89 -5.842)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 8.636 -5.08)
-            (xy 10.16 -5.842)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 8.636 -0.762)
-            (xy 8.636 0.762)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 8.636 -0.762)
-            (xy 8.89 -0.762)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 8.636 0)
-            (xy 10.16 -0.762)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 10.16 -5.842)
-            (xy 10.16 -4.318)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 10.16 -5.08)
-            (xy 10.668 -5.08)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 10.16 -4.318)
-            (xy 8.636 -5.08)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 10.16 -0.762)
-            (xy 10.16 0.762)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 10.16 0)
-            (xy 10.668 0)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 10.16 0.762)
-            (xy 8.636 0)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 10.668 -5.842)
-            (xy 12.192 -5.08)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 10.668 -4.318)
-            (xy 10.668 -5.842)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 10.668 -0.762)
-            (xy 12.192 0)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 10.668 0.762)
-            (xy 10.668 -0.762)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 12.192 -5.08)
-            (xy 10.668 -4.318)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 12.192 -5.08)
-            (xy 12.7 -5.08)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 12.192 -4.318)
-            (xy 11.938 -4.318)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 12.192 -4.318)
-            (xy 12.192 -5.842)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 12.192 0)
-            (xy 10.668 0.762)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 12.192 0)
-            (xy 12.7 0)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 12.192 0.762)
-            (xy 11.938 0.762)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 12.192 0.762)
-            (xy 12.192 -0.762)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 12.7 -2.54)
-            (xy 15.24 -2.54)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 12.7 0)
-            (xy 12.7 -5.08)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 15.24 -7.62)
-            (xy 15.24 2.54)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 15.24 2.54)
-            (xy 7.62 2.54)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type none))
-        )
-        (circle (center 12.7 -2.54) (radius 0.127)
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "PESD1CAN_215_1_1"
-        (pin bidirectional line (at 0 0 0) (length 7.62)
-          (name "1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 0 -5.08 0) (length 7.62)
-          (name "2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 22.86 -2.54 180) (length 7.62)
-          (name "3" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-  )
-
-  (junction (at 102.87 53.34) (diameter 0) (color 0 0 0 0)
-    (uuid a7f83f0d-80b4-42e6-a6f8-34e4a02fc3a1)
-  )
-  (junction (at 102.87 30.48) (diameter 0) (color 0 0 0 0)
-    (uuid a8c49ee5-bb77-4c21-b66b-b0ba29d636e7)
-  )
-  (junction (at 102.87 22.86) (diameter 0) (color 0 0 0 0)
-    (uuid af2d9636-afb3-47e2-b584-51175c014a2d)
-  )
-  (junction (at 128.27 38.1) (diameter 0) (color 0 0 0 0)
-    (uuid b98883c1-2129-4580-aae6-6e391d4ec951)
-  )
-  (junction (at 52.07 43.18) (diameter 0) (color 0 0 0 0)
-    (uuid c7ad307c-bf71-4c52-9b87-e8054b26e96c)
-  )
-  (junction (at 130.81 43.18) (diameter 0) (color 0 0 0 0)
-    (uuid d08b954d-ed07-439f-9cef-ed5dee468a83)
-  )
-
-  (wire (pts (xy 102.87 54.61) (xy 102.87 53.34))
-    (stroke (width 0) (type default))
-    (uuid 092e8f0c-11ca-4a21-ad2a-4f920ffd9867)
-  )
-  (wire (pts (xy 102.87 53.34) (xy 118.11 53.34))
-    (stroke (width 0) (type default))
-    (uuid 0af59bf8-c61a-4436-89ae-759a463f12e9)
-  )
-  (wire (pts (xy 74.93 38.1) (xy 90.17 38.1))
-    (stroke (width 0) (type default))
-    (uuid 20322183-893a-4dbf-92e4-6b51be971a9b)
-  )
-  (wire (pts (xy 74.93 45.72) (xy 82.55 45.72))
-    (stroke (width 0) (type default))
-    (uuid 239c42e9-45e5-48f2-a14d-3ef5da26662a)
-  )
-  (wire (pts (xy 33.02 59.69) (xy 36.83 59.69))
-    (stroke (width 0) (type default))
-    (uuid 2a6dfdaa-06cd-4821-b444-7fa39dc5a27b)
-  )
-  (wire (pts (xy 91.44 22.86) (xy 102.87 22.86))
-    (stroke (width 0) (type default))
-    (uuid 2ca33855-0f1d-4504-b050-36792928a06d)
-  )
-  (wire (pts (xy 44.45 43.18) (xy 44.45 40.64))
-    (stroke (width 0) (type default))
-    (uuid 2dc23b7d-c4d3-43f0-ac72-03840b82d627)
-  )
-  (wire (pts (xy 130.81 43.18) (xy 130.81 45.72))
-    (stroke (width 0) (type default))
-    (uuid 3874f9f8-aa3a-4d3d-a66c-22e24f7279ea)
-  )
-  (wire (pts (xy 118.11 40.64) (xy 115.57 40.64))
-    (stroke (width 0) (type default))
-    (uuid 47746442-7776-4e21-bc65-99b0344ceb42)
-  )
-  (wire (pts (xy 52.07 35.56) (xy 52.07 43.18))
-    (stroke (width 0) (type default))
-    (uuid 4a87db2f-c63b-4d52-84fb-0705f92352b7)
-  )
-  (wire (pts (xy 118.11 45.72) (xy 118.11 40.64))
-    (stroke (width 0) (type default))
-    (uuid 4d5ac872-9a8f-4732-94b4-11c3fdf6aa1d)
-  )
-  (wire (pts (xy 128.27 38.1) (xy 138.43 38.1))
-    (stroke (width 0) (type default))
-    (uuid 54374d5d-aed9-47ef-bb56-02a305336f1b)
-  )
-  (wire (pts (xy 115.57 38.1) (xy 128.27 38.1))
-    (stroke (width 0) (type default))
-    (uuid 67d50504-fc65-45e7-867d-e937704e2a9e)
-  )
-  (wire (pts (xy 102.87 53.34) (xy 102.87 50.8))
-    (stroke (width 0) (type default))
-    (uuid 7376d07b-347d-4d33-af3f-828c9ce0e497)
-  )
-  (wire (pts (xy 33.02 38.1) (xy 44.45 38.1))
-    (stroke (width 0) (type default))
-    (uuid 73856bf8-51a9-4377-8523-bf686218e1d6)
-  )
-  (wire (pts (xy 33.02 40.64) (xy 44.45 40.64))
-    (stroke (width 0) (type default))
-    (uuid 79129e69-817e-4963-a8fe-71ba879e8511)
-  )
-  (wire (pts (xy 44.45 35.56) (xy 44.45 38.1))
-    (stroke (width 0) (type default))
-    (uuid 7d97224b-f430-4a21-b117-945bca7675e8)
-  )
-  (wire (pts (xy 115.57 43.18) (xy 130.81 43.18))
-    (stroke (width 0) (type default))
-    (uuid 876c6310-068c-46d0-be60-fc29acd1f31d)
-  )
-  (wire (pts (xy 138.43 43.18) (xy 130.81 43.18))
-    (stroke (width 0) (type default))
-    (uuid 89853a15-7735-4da2-8375-da37b6033f15)
-  )
-  (wire (pts (xy 36.83 59.69) (xy 36.83 60.96))
-    (stroke (width 0) (type default))
-    (uuid 8c86c1d7-aed9-4d75-86ee-8071e5d44449)
-  )
-  (wire (pts (xy 74.93 35.56) (xy 90.17 35.56))
-    (stroke (width 0) (type default))
-    (uuid 9054e83b-064e-4eec-90d1-144b4a642d6f)
-  )
-  (wire (pts (xy 33.02 57.15) (xy 36.83 57.15))
-    (stroke (width 0) (type default))
-    (uuid 998321e3-7312-473e-b287-b46af03bf24e)
-  )
-  (wire (pts (xy 36.83 57.15) (xy 36.83 55.88))
-    (stroke (width 0) (type default))
-    (uuid b51de7ce-7d37-405b-9e53-a667c0770521)
-  )
-  (wire (pts (xy 52.07 43.18) (xy 55.88 43.18))
-    (stroke (width 0) (type default))
-    (uuid f0c014f4-a9b7-41bc-8a5c-744a9b2f733c)
-  )
-  (wire (pts (xy 128.27 38.1) (xy 128.27 54.61))
-    (stroke (width 0) (type default))
-    (uuid f9fbbedc-1276-4fab-9bed-d83ee497d7c2)
-  )
-  (wire (pts (xy 130.81 53.34) (xy 130.81 54.61))
-    (stroke (width 0) (type default))
-    (uuid fb96bdda-7fcc-4bee-b4b4-04713b2cae49)
-  )
-  (wire (pts (xy 91.44 30.48) (xy 102.87 30.48))
-    (stroke (width 0) (type default))
-    (uuid fbef7a6e-80b5-4dcc-a3c0-0ca6378407df)
-  )
-
-  (label "CAN_L" (at 40.64 40.64 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 241366f0-9412-496a-9d80-2251849b96d8)
-  )
-  (label "CAN_H" (at 128.27 38.1 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 52b2855f-2649-467a-b693-bad02908d6cc)
-  )
-  (label "CAN_H" (at 40.64 38.1 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 56aaf084-35ce-4e34-9e1c-b9464634851b)
-  )
-  (label "CAN_L" (at 130.81 43.18 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid e1d97ec1-d400-401a-ab1e-5f518139ceff)
-  )
-
-  (global_label "CAN_S" (shape input) (at 74.93 45.72 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 4d09b7c3-8d68-4564-8820-44805d0d1888)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 66.0786 45.72 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "CAN_RX" (shape input) (at 74.93 38.1 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 81d5ff41-1436-4f39-ae72-157a8447bede)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 64.8086 38.1 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "CAN_TX" (shape input) (at 74.93 35.56 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid eac462ff-c66c-4661-aa7f-f74a514bb0a7)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 65.111 35.56 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-
-  (symbol (lib_id "Connector_Generic:Conn_01x02") (at 130.81 59.69 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 08ff4106-d359-4455-b723-a96d1cedafaa)
-    (property "Reference" "J1" (at 128.27 64.77 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "120TR" (at 127 62.23 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 130.81 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 130.81 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Digikey" "732-5315-ND" (at 130.81 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 88d37d17-4201-46b9-927b-69bbf3b3ccf9))
-    (pin "2" (uuid eef9a039-d0bd-4d9e-9004-848b8daefbc5))
-    (instances
-      (project "Toolhead Board"
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef"
-          (reference "J1") (unit 1)
-        )
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
-          (reference "J8") (unit 1)
-        )
-      )
-      (project "can_magnetic_angle_sensor"
-        (path "/d66941a0-1ce5-4d2b-a54d-b4aa566c6893"
-          (reference "J3") (unit 1)
-        )
-      )
-      (project "magn_angle_sensor_v2"
-        (path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
-          (reference "J1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+24V") (at 36.83 55.88 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 1cede9d3-6836-4f0b-81ed-47208a75ca0c)
-    (property "Reference" "#PWR034" (at 36.83 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+24V" (at 36.83 50.8 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 36.83 55.88 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 36.83 55.88 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 159624c8-94e3-44db-8565-e223068d8d2a))
-    (instances
-      (project "Toolhead Board"
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef"
-          (reference "#PWR034") (unit 1)
-        )
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
-          (reference "#PWR053") (unit 1)
-        )
-      )
-      (project "can_magnetic_angle_sensor"
-        (path "/d66941a0-1ce5-4d2b-a54d-b4aa566c6893"
-          (reference "#PWR08") (unit 1)
-        )
-      )
-      (project "magn_angle_sensor_v2"
-        (path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
-          (reference "#PWR034") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 86.36 45.72 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 2b83b0c4-579d-4043-878a-973a0457b846)
-    (property "Reference" "R8" (at 87.63 40.64 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "NC" (at 87.63 43.18 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 86.36 43.942 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 86.36 45.72 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Digikey" "" (at 86.36 45.72 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 90d7d416-7072-4eda-90a0-e85b3b1fc6da))
-    (pin "2" (uuid 7e28533a-f3f3-4b16-9fe2-a65141795391))
-    (instances
-      (project "Toolhead Board"
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef"
-          (reference "R8") (unit 1)
-        )
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
-          (reference "R10") (unit 1)
-        )
-      )
-      (project "can_magnetic_angle_sensor"
-        (path "/d66941a0-1ce5-4d2b-a54d-b4aa566c6893"
-          (reference "R13") (unit 1)
-        )
-      )
-      (project "magn_angle_sensor_v2"
-        (path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
-          (reference "R8") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C") (at 102.87 26.67 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 4b4d143c-a696-4ef0-9c49-c578cbffa40f)
-    (property "Reference" "C19" (at 107.95 27.94 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "100n" (at 107.95 25.4 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 103.8352 30.48 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 102.87 26.67 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Digikey" "1276-1935-1-ND" (at 102.87 26.67 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e908a327-f210-4f11-a178-540025c3b456))
-    (pin "2" (uuid b417a1b9-4b08-4bab-afc5-15c3522ebb57))
-    (instances
-      (project "Toolhead Board"
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef"
-          (reference "C19") (unit 1)
-        )
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
-          (reference "C20") (unit 1)
-        )
-      )
-      (project "magn_angle_sensor_v2"
-        (path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
-          (reference "C19") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 55.88 43.18 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 5f61db5d-2281-400c-96a2-23189f396e7f)
-    (property "Reference" "#PWR035" (at 55.88 49.53 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 55.88 48.26 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 55.88 43.18 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 55.88 43.18 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 526ae610-7127-47a6-ae2c-68a70fbba983))
-    (instances
-      (project "Toolhead Board"
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef"
-          (reference "#PWR035") (unit 1)
-        )
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
-          (reference "#PWR051") (unit 1)
-        )
-      )
-      (project "can_magnetic_angle_sensor"
-        (path "/d66941a0-1ce5-4d2b-a54d-b4aa566c6893"
-          (reference "#PWR014") (unit 1)
-        )
-      )
-      (project "magn_angle_sensor_v2"
-        (path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
-          (reference "#PWR035") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 130.81 49.53 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 6e650666-6c78-41c5-89b4-428a8c0a996e)
-    (property "Reference" "R9" (at 135.89 50.8 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "120" (at 133.35 50.8 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 132.588 49.53 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 130.81 49.53 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Digikey" "RMCF0603FT120RCT-ND" (at 130.81 49.53 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 516e14c2-2631-410f-b08d-e804bc5b9326))
-    (pin "2" (uuid 22621f27-2fa6-449d-9880-cfcec297bc7b))
-    (instances
-      (project "Toolhead Board"
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef"
-          (reference "R9") (unit 1)
-        )
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
-          (reference "R11") (unit 1)
-        )
-      )
-      (project "can_magnetic_angle_sensor"
-        (path "/d66941a0-1ce5-4d2b-a54d-b4aa566c6893"
-          (reference "R13") (unit 1)
-        )
-      )
-      (project "magn_angle_sensor_v2"
-        (path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
-          (reference "R9") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector_Generic:Conn_01x02") (at 27.94 40.64 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 783c9550-ee5b-4f14-81ef-3776211a60bf)
-    (property "Reference" "J6" (at 27.94 31.75 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "Conn_01x02" (at 27.94 34.29 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 27.94 40.64 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 27.94 40.64 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Digikey" "455-1719-ND" (at 27.94 40.64 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 17c8f099-5ff6-4c17-8f99-8df8b2a14d8a))
-    (pin "2" (uuid bdf93337-6782-4424-bd85-af93d7c3afbf))
-    (instances
-      (project "Toolhead Board"
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
-          (reference "J6") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 36.83 60.96 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 8d56a8b2-bb05-422b-864a-7298e2056b4b)
-    (property "Reference" "#PWR037" (at 36.83 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 36.83 66.04 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 36.83 60.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 36.83 60.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 1bbf9d68-fa82-4d66-8902-50132f024023))
-    (instances
-      (project "Toolhead Board"
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef"
-          (reference "#PWR037") (unit 1)
-        )
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
-          (reference "#PWR054") (unit 1)
-        )
-      )
-      (project "can_magnetic_angle_sensor"
-        (path "/d66941a0-1ce5-4d2b-a54d-b4aa566c6893"
-          (reference "#PWR09") (unit 1)
-        )
-      )
-      (project "magn_angle_sensor_v2"
-        (path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
-          (reference "#PWR037") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C") (at 91.44 26.67 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid a06222d2-fe63-4b76-a01d-6a39dc20822c)
-    (property "Reference" "C18" (at 96.52 27.94 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "1u" (at 96.52 25.4 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 92.4052 30.48 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 91.44 26.67 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Digikey" "1276-1102-1-ND" (at 91.44 26.67 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b2c0c2dc-7594-4da9-bec4-4360a26fe8a4))
-    (pin "2" (uuid 6a036395-2d7c-4235-9869-e85268bbd372))
-    (instances
-      (project "Toolhead Board"
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef"
-          (reference "C18") (unit 1)
-        )
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
-          (reference "C19") (unit 1)
-        )
-      )
-      (project "magn_angle_sensor_v2"
-        (path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
-          (reference "C18") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C") (at 48.26 43.18 90) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid a186064b-b2ba-4bad-a7db-b029e150f3d9)
-    (property "Reference" "C24" (at 48.26 50.8 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "47p" (at 48.26 48.26 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 52.07 44.1452 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 48.26 43.18 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Digikey" "311-4037-1-ND" (at 48.26 43.18 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid d3bf5ff8-fce8-4eb3-8eca-d03b0e94bb16))
-    (pin "2" (uuid edf6c56d-9e41-41cc-a30f-9bdea7637a7a))
-    (instances
-      (project "Toolhead Board"
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef"
-          (reference "C24") (unit 1)
-        )
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
-          (reference "C22") (unit 1)
-        )
-      )
-      (project "can_magnetic_angle_sensor"
-        (path "/d66941a0-1ce5-4d2b-a54d-b4aa566c6893"
-          (reference "C5") (unit 1)
-        )
-      )
-      (project "magn_angle_sensor_v2"
-        (path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
-          (reference "C24") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 161.29 40.64 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid a6d0f8b3-cc17-4643-aefd-6f4282b6a70a)
-    (property "Reference" "#PWR027" (at 167.64 40.64 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 165.1 40.64 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "" (at 161.29 40.64 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 161.29 40.64 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 083c8cf1-3117-420c-ae2f-01feca3c5624))
-    (instances
-      (project "Toolhead Board"
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef"
-          (reference "#PWR027") (unit 1)
-        )
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
-          (reference "#PWR050") (unit 1)
-        )
-      )
-      (project "magn_angle_sensor_v2"
-        (path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
-          (reference "#PWR027") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C") (at 118.11 49.53 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid a938e468-dcc0-4bc6-8fb1-3d52e8eebe8e)
-    (property "Reference" "C22" (at 123.19 50.8 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "100n" (at 123.19 48.26 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 119.0752 53.34 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 118.11 49.53 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Digikey" "1276-1935-1-ND" (at 118.11 49.53 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid fd1b3ba7-6c96-450c-b3ef-b27255cb5272))
-    (pin "2" (uuid 72a55ad5-63aa-4393-b105-2d6ed17a9e87))
-    (instances
-      (project "Toolhead Board"
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef"
-          (reference "C22") (unit 1)
-        )
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
-          (reference "C23") (unit 1)
-        )
-      )
-      (project "magn_angle_sensor_v2"
-        (path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
-          (reference "C22") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Interface_CAN_LIN:SN65HVD1050D") (at 102.87 40.64 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid b159988b-0184-4f0a-be9a-2128668b2e6b)
-    (property "Reference" "U6" (at 97.79 53.34 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "SN65HVD1050D" (at 99.06 50.8 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "" (at 102.87 53.34 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn65hvd1050.pdf" (at 100.33 30.48 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Digikey" "296-19416-5-ND" (at 102.87 40.64 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid aa43d260-5139-4c41-a7d6-76ab99f0c566))
-    (pin "2" (uuid 61148c7a-fa81-4463-a1ad-6bf7070af672))
-    (pin "3" (uuid a3011c4b-ea63-4a40-b1ba-4ed183224b91))
-    (pin "4" (uuid 009dedee-9ed1-4648-b431-8eda1ae5b32f))
-    (pin "5" (uuid 3f4f4f1a-d60d-4ef2-ac9a-d08addfe2a5f))
-    (pin "6" (uuid 69276d73-dbfe-4ec0-aa7a-e37838a6e267))
-    (pin "7" (uuid ee6175c8-8387-421b-b77d-648a98d7a8c0))
-    (pin "8" (uuid 28da2e27-c558-4137-8f85-7f9f6cd2b898))
-    (instances
-      (project "Toolhead Board"
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef"
-          (reference "U6") (unit 1)
-        )
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
-          (reference "U5") (unit 1)
-        )
-      )
-      (project "magn_angle_sensor_v2"
-        (path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
-          (reference "U6") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C") (at 48.26 35.56 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid c9633786-9d22-441d-9c4c-cdfca27a0006)
-    (property "Reference" "C23" (at 48.26 27.94 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "47p" (at 48.26 30.48 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 52.07 34.5948 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 48.26 35.56 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Digikey" "311-4037-1-ND" (at 48.26 35.56 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 47e05837-0f0c-43c7-a911-ebc0d99f63db))
-    (pin "2" (uuid aea9c93c-888e-4e61-a04c-7d7b98d0435c))
-    (instances
-      (project "Toolhead Board"
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef"
-          (reference "C23") (unit 1)
-        )
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
-          (reference "C21") (unit 1)
-        )
-      )
-      (project "can_magnetic_angle_sensor"
-        (path "/d66941a0-1ce5-4d2b-a54d-b4aa566c6893"
-          (reference "C4") (unit 1)
-        )
-      )
-      (project "magn_angle_sensor_v2"
-        (path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
-          (reference "C23") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 102.87 30.48 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid cde27fe0-f6c5-4b0d-9248-a77fa03c59a3)
-    (property "Reference" "#PWR026" (at 99.06 30.48 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 106.68 30.48 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 102.87 30.48 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 102.87 30.48 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 4d3e3b08-4011-4688-be43-85ffadf0cee4))
-    (instances
-      (project "Toolhead Board"
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef"
-          (reference "#PWR026") (unit 1)
-        )
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
-          (reference "#PWR049") (unit 1)
-        )
-      )
-      (project "magn_angle_sensor_v2"
-        (path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
-          (reference "#PWR026") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 102.87 54.61 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid d6b9ce42-e46a-4b0d-81f8-f52705ed1a80)
-    (property "Reference" "#PWR031" (at 102.87 60.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 102.87 59.69 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 102.87 54.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 102.87 54.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 859deb04-cf4b-4eeb-b6e2-86542ed364a8))
-    (instances
-      (project "Toolhead Board"
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef"
-          (reference "#PWR031") (unit 1)
-        )
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
-          (reference "#PWR052") (unit 1)
-        )
-      )
-      (project "magn_angle_sensor_v2"
-        (path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
-          (reference "#PWR031") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 102.87 22.86 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid deb43597-d52d-4096-a8da-01aceb200b6c)
-    (property "Reference" "#PWR024" (at 102.87 16.51 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 102.87 17.78 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 102.87 22.86 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 102.87 22.86 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 74de4b6f-bcab-4ba7-97de-4abb2aa77f2c))
-    (instances
-      (project "Toolhead Board"
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef"
-          (reference "#PWR024") (unit 1)
-        )
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
-          (reference "#PWR048") (unit 1)
-        )
-      )
-      (project "magn_angle_sensor_v2"
-        (path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
-          (reference "#PWR024") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector_Generic:Conn_01x02") (at 27.94 59.69 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid f0feb500-dc59-48da-84e1-c813a4b06f4a)
-    (property "Reference" "J7" (at 27.94 50.8 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "Conn_01x02" (at 27.94 53.34 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 27.94 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 27.94 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Digikey" "1738-1436-ND" (at 27.94 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f91c5a4e-be3a-40ba-9c83-127a332239cf))
-    (pin "2" (uuid e616974e-aaa8-485f-9034-6d973d48b3e3))
-    (instances
-      (project "Toolhead Board"
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
-          (reference "J7") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "symbols:PESD1CAN_215") (at 138.43 38.1 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid f2f27245-f8b7-4e10-8c6a-70ef7713a496)
-    (property "Reference" "CR1" (at 149.86 30.48 0)
-      (effects (font (size 1.524 1.524)))
-    )
-    (property "Value" "PESD1CAN_215" (at 149.86 33.02 0)
-      (effects (font (size 1.524 1.524)))
-    )
-    (property "Footprint" "" (at 138.43 38.1 0)
-      (effects (font (size 1.27 1.27) italic) hide)
-    )
-    (property "Datasheet" "PESD1CAN_215" (at 138.43 38.1 0)
-      (effects (font (size 1.27 1.27) italic) hide)
-    )
-    (property "Digikey" "5272-PESD1CANCT-ND" (at 138.43 38.1 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 1fca90ee-70e9-4abb-95f4-994dd1c90915))
-    (pin "2" (uuid e3c54252-2ac9-4dd6-95f9-1c026149fd3b))
-    (pin "3" (uuid 9dc59b4f-6e4b-46a6-bfe8-512994ad0a06))
-    (instances
-      (project "Toolhead Board"
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef"
-          (reference "CR1") (unit 1)
-        )
-        (path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
-          (reference "CR1") (unit 1)
-        )
-      )
-      (project "magn_angle_sensor_v2"
-        (path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
-          (reference "CR1") (unit 1)
-        )
-      )
-    )
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "5bd3d9ef-0a2c-4ae1-b525-eb82ebdffc6f")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:C"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Interface_CAN_LIN:SN65HVD1050D"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -8.89 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" "SN65HVD1050D"
+				(at 1.27 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+				(at 0 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn65hvd1050.pdf"
+				(at -2.54 10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "CAN Bus Transceiver, EMC optimised, 5.0V, 1Mbps, SOIC-8"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "can transceiver ti canbus"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SN65HVD1050D_0_1"
+				(rectangle
+					(start -10.16 7.62)
+					(end 10.16 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "SN65HVD1050D_1_1"
+				(pin input line
+					(at -12.7 5.08 0)
+					(length 2.54)
+					(name "TXD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 10.16 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -12.7 2.54 0)
+					(length 2.54)
+					(name "RXD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 2.54)
+					(name "VREF"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 -2.54 180)
+					(length 2.54)
+					(name "CANL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 2.54 180)
+					(length 2.54)
+					(name "CANH"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 -5.08 0)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:+24V"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+24V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+24V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+24V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+24V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0) hide
+					(name "+24V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:+5V"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+5V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0) hide
+					(name "+5V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "symbols:PESD1CAN_215"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "CR1"
+				(at 11.43 7.62 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "PESD1CAN_215"
+				(at 11.43 5.08 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "PESD1CAN_215"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Digikey" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "PESD1CAN,215"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT23_PESD1_NEX SOT23_PESD1_NEX-M SOT23_PESD1_NEX-L"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PESD1CAN_215_0_1"
+				(polyline
+					(pts
+						(xy 7.62 -7.62) (xy 15.24 -7.62)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -5.08) (xy 8.636 -5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 0) (xy 8.636 0)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 2.54) (xy 7.62 -7.62)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.636 -5.842) (xy 8.636 -4.318)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.636 -5.842) (xy 8.89 -5.842)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.636 -5.08) (xy 10.16 -5.842)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.636 -0.762) (xy 8.636 0.762)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.636 -0.762) (xy 8.89 -0.762)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.636 0) (xy 10.16 -0.762)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -5.842) (xy 10.16 -4.318)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -5.08) (xy 10.668 -5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -4.318) (xy 8.636 -5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -0.762) (xy 10.16 0.762)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 0) (xy 10.668 0)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 0.762) (xy 8.636 0)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.668 -5.842) (xy 12.192 -5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.668 -4.318) (xy 10.668 -5.842)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.668 -0.762) (xy 12.192 0)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.668 0.762) (xy 10.668 -0.762)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.192 -5.08) (xy 10.668 -4.318)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.192 -5.08) (xy 12.7 -5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.192 -4.318) (xy 11.938 -4.318)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.192 -4.318) (xy 12.192 -5.842)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.192 0) (xy 10.668 0.762)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.192 0) (xy 12.7 0)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.192 0.762) (xy 11.938 0.762)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.192 0.762) (xy 12.192 -0.762)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.7 -2.54) (xy 15.24 -2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.7 0) (xy 12.7 -5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 15.24 -7.62) (xy 15.24 2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 15.24 2.54) (xy 7.62 2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 12.7 -2.54)
+					(radius 0.127)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "PESD1CAN_215_1_1"
+				(pin bidirectional line
+					(at 0 0 0)
+					(length 7.62)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 0 -5.08 0)
+					(length 7.62)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 22.86 -2.54 180)
+					(length 7.62)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 102.87 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a7f83f0d-80b4-42e6-a6f8-34e4a02fc3a1")
+	)
+	(junction
+		(at 102.87 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a8c49ee5-bb77-4c21-b66b-b0ba29d636e7")
+	)
+	(junction
+		(at 102.87 22.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "af2d9636-afb3-47e2-b584-51175c014a2d")
+	)
+	(junction
+		(at 128.27 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b98883c1-2129-4580-aae6-6e391d4ec951")
+	)
+	(junction
+		(at 52.07 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c7ad307c-bf71-4c52-9b87-e8054b26e96c")
+	)
+	(junction
+		(at 130.81 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d08b954d-ed07-439f-9cef-ed5dee468a83")
+	)
+	(wire
+		(pts
+			(xy 102.87 54.61) (xy 102.87 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "092e8f0c-11ca-4a21-ad2a-4f920ffd9867")
+	)
+	(wire
+		(pts
+			(xy 102.87 53.34) (xy 118.11 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0af59bf8-c61a-4436-89ae-759a463f12e9")
+	)
+	(wire
+		(pts
+			(xy 74.93 38.1) (xy 90.17 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20322183-893a-4dbf-92e4-6b51be971a9b")
+	)
+	(wire
+		(pts
+			(xy 74.93 45.72) (xy 82.55 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "239c42e9-45e5-48f2-a14d-3ef5da26662a")
+	)
+	(wire
+		(pts
+			(xy 33.02 59.69) (xy 36.83 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a6dfdaa-06cd-4821-b444-7fa39dc5a27b")
+	)
+	(wire
+		(pts
+			(xy 91.44 22.86) (xy 102.87 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ca33855-0f1d-4504-b050-36792928a06d")
+	)
+	(wire
+		(pts
+			(xy 44.45 43.18) (xy 44.45 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2dc23b7d-c4d3-43f0-ac72-03840b82d627")
+	)
+	(wire
+		(pts
+			(xy 130.81 43.18) (xy 130.81 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3874f9f8-aa3a-4d3d-a66c-22e24f7279ea")
+	)
+	(wire
+		(pts
+			(xy 118.11 40.64) (xy 115.57 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47746442-7776-4e21-bc65-99b0344ceb42")
+	)
+	(wire
+		(pts
+			(xy 52.07 35.56) (xy 52.07 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a87db2f-c63b-4d52-84fb-0705f92352b7")
+	)
+	(wire
+		(pts
+			(xy 118.11 45.72) (xy 118.11 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d5ac872-9a8f-4732-94b4-11c3fdf6aa1d")
+	)
+	(wire
+		(pts
+			(xy 128.27 38.1) (xy 138.43 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54374d5d-aed9-47ef-bb56-02a305336f1b")
+	)
+	(wire
+		(pts
+			(xy 115.57 38.1) (xy 128.27 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67d50504-fc65-45e7-867d-e937704e2a9e")
+	)
+	(wire
+		(pts
+			(xy 102.87 53.34) (xy 102.87 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7376d07b-347d-4d33-af3f-828c9ce0e497")
+	)
+	(wire
+		(pts
+			(xy 33.02 38.1) (xy 44.45 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73856bf8-51a9-4377-8523-bf686218e1d6")
+	)
+	(wire
+		(pts
+			(xy 33.02 40.64) (xy 44.45 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79129e69-817e-4963-a8fe-71ba879e8511")
+	)
+	(wire
+		(pts
+			(xy 44.45 35.56) (xy 44.45 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d97224b-f430-4a21-b117-945bca7675e8")
+	)
+	(wire
+		(pts
+			(xy 115.57 43.18) (xy 130.81 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "876c6310-068c-46d0-be60-fc29acd1f31d")
+	)
+	(wire
+		(pts
+			(xy 138.43 43.18) (xy 130.81 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89853a15-7735-4da2-8375-da37b6033f15")
+	)
+	(wire
+		(pts
+			(xy 36.83 59.69) (xy 36.83 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c86c1d7-aed9-4d75-86ee-8071e5d44449")
+	)
+	(wire
+		(pts
+			(xy 74.93 35.56) (xy 90.17 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9054e83b-064e-4eec-90d1-144b4a642d6f")
+	)
+	(wire
+		(pts
+			(xy 33.02 57.15) (xy 36.83 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "998321e3-7312-473e-b287-b46af03bf24e")
+	)
+	(wire
+		(pts
+			(xy 36.83 57.15) (xy 36.83 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b51de7ce-7d37-405b-9e53-a667c0770521")
+	)
+	(wire
+		(pts
+			(xy 52.07 43.18) (xy 55.88 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0c014f4-a9b7-41bc-8a5c-744a9b2f733c")
+	)
+	(wire
+		(pts
+			(xy 128.27 38.1) (xy 128.27 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9fbbedc-1276-4fab-9bed-d83ee497d7c2")
+	)
+	(wire
+		(pts
+			(xy 130.81 53.34) (xy 130.81 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb96bdda-7fcc-4bee-b4b4-04713b2cae49")
+	)
+	(wire
+		(pts
+			(xy 91.44 30.48) (xy 102.87 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbef7a6e-80b5-4dcc-a3c0-0ca6378407df")
+	)
+	(label "CAN_L"
+		(at 40.64 40.64 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "241366f0-9412-496a-9d80-2251849b96d8")
+	)
+	(label "CAN_H"
+		(at 128.27 38.1 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "52b2855f-2649-467a-b693-bad02908d6cc")
+	)
+	(label "CAN_H"
+		(at 40.64 38.1 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "56aaf084-35ce-4e34-9e1c-b9464634851b")
+	)
+	(label "CAN_L"
+		(at 130.81 43.18 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e1d97ec1-d400-401a-ab1e-5f518139ceff")
+	)
+	(global_label "CAN_S"
+		(shape input)
+		(at 74.93 45.72 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4d09b7c3-8d68-4564-8820-44805d0d1888")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 66.0786 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CAN_RX"
+		(shape input)
+		(at 74.93 38.1 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "81d5ff41-1436-4f39-ae72-157a8447bede")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 64.8086 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CAN_TX"
+		(shape input)
+		(at 74.93 35.56 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "eac462ff-c66c-4661-aa7f-f74a514bb0a7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 65.111 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 130.81 59.69 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "08ff4106-d359-4455-b723-a96d1cedafaa")
+		(property "Reference" "J8"
+			(at 128.27 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "120TR"
+			(at 127 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.81 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 130.81 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "732-5315-ND"
+			(at 130.81 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "88d37d17-4201-46b9-927b-69bbf3b3ccf9")
+		)
+		(pin "2"
+			(uuid "eef9a039-d0bd-4d9e-9004-848b8daefbc5")
+		)
+		(instances
+			(project "Toolhead Board"
+				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
+					(reference "J8")
+					(unit 1)
+				)
+			)
+			(project "can_magnetic_angle_sensor"
+				(path "/d66941a0-1ce5-4d2b-a54d-b4aa566c6893"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+			(project "magn_angle_sensor_v2"
+				(path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+24V")
+		(at 36.83 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1cede9d3-6836-4f0b-81ed-47208a75ca0c")
+		(property "Reference" "#PWR053"
+			(at 36.83 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+24V"
+			(at 36.83 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.83 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 36.83 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "159624c8-94e3-44db-8565-e223068d8d2a")
+		)
+		(instances
+			(project "Toolhead Board"
+				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
+					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+			(project "can_magnetic_angle_sensor"
+				(path "/d66941a0-1ce5-4d2b-a54d-b4aa566c6893"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+			(project "magn_angle_sensor_v2"
+				(path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
+					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 86.36 45.72 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2b83b0c4-579d-4043-878a-973a0457b846")
+		(property "Reference" "R10"
+			(at 87.63 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "NC"
+			(at 87.63 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 86.36 43.942 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 86.36 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 86.36 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" ""
+			(at 86.36 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "90d7d416-7072-4eda-90a0-e85b3b1fc6da")
+		)
+		(pin "2"
+			(uuid "7e28533a-f3f3-4b16-9fe2-a65141795391")
+		)
+		(instances
+			(project "Toolhead Board"
+				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+			(project "can_magnetic_angle_sensor"
+				(path "/d66941a0-1ce5-4d2b-a54d-b4aa566c6893"
+					(reference "R13")
+					(unit 1)
+				)
+			)
+			(project "magn_angle_sensor_v2"
+				(path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 102.87 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4b4d143c-a696-4ef0-9c49-c578cbffa40f")
+		(property "Reference" "C20"
+			(at 107.95 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 107.95 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 103.8352 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 102.87 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 102.87 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "1276-1935-1-ND"
+			(at 102.87 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e908a327-f210-4f11-a178-540025c3b456")
+		)
+		(pin "2"
+			(uuid "b417a1b9-4b08-4bab-afc5-15c3522ebb57")
+		)
+		(instances
+			(project "Toolhead Board"
+				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
+					(reference "C20")
+					(unit 1)
+				)
+			)
+			(project "magn_angle_sensor_v2"
+				(path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
+					(reference "C19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 55.88 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5f61db5d-2281-400c-96a2-23189f396e7f")
+		(property "Reference" "#PWR051"
+			(at 55.88 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 55.88 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 55.88 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 55.88 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "526ae610-7127-47a6-ae2c-68a70fbba983")
+		)
+		(instances
+			(project "Toolhead Board"
+				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
+					(reference "#PWR051")
+					(unit 1)
+				)
+			)
+			(project "can_magnetic_angle_sensor"
+				(path "/d66941a0-1ce5-4d2b-a54d-b4aa566c6893"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+			(project "magn_angle_sensor_v2"
+				(path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
+					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 130.81 49.53 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6e650666-6c78-41c5-89b4-428a8c0a996e")
+		(property "Reference" "R11"
+			(at 135.89 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "120"
+			(at 133.35 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 132.588 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.81 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 130.81 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "RMCF0603FT120RCT-ND"
+			(at 130.81 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "516e14c2-2631-410f-b08d-e804bc5b9326")
+		)
+		(pin "2"
+			(uuid "22621f27-2fa6-449d-9880-cfcec297bc7b")
+		)
+		(instances
+			(project "Toolhead Board"
+				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+			(project "can_magnetic_angle_sensor"
+				(path "/d66941a0-1ce5-4d2b-a54d-b4aa566c6893"
+					(reference "R13")
+					(unit 1)
+				)
+			)
+			(project "magn_angle_sensor_v2"
+				(path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 27.94 40.64 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "783c9550-ee5b-4f14-81ef-3776211a60bf")
+		(property "Reference" "J6"
+			(at 27.94 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 27.94 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 27.94 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 27.94 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 27.94 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "455-1719-ND"
+			(at 27.94 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "17c8f099-5ff6-4c17-8f99-8df8b2a14d8a")
+		)
+		(pin "2"
+			(uuid "bdf93337-6782-4424-bd85-af93d7c3afbf")
+		)
+		(instances
+			(project "Toolhead Board"
+				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 36.83 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8d56a8b2-bb05-422b-864a-7298e2056b4b")
+		(property "Reference" "#PWR054"
+			(at 36.83 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 36.83 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.83 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 36.83 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1bbf9d68-fa82-4d66-8902-50132f024023")
+		)
+		(instances
+			(project "Toolhead Board"
+				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
+					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+			(project "can_magnetic_angle_sensor"
+				(path "/d66941a0-1ce5-4d2b-a54d-b4aa566c6893"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+			(project "magn_angle_sensor_v2"
+				(path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 91.44 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a06222d2-fe63-4b76-a01d-6a39dc20822c")
+		(property "Reference" "C19"
+			(at 96.52 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1u"
+			(at 96.52 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 92.4052 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 91.44 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 91.44 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "1276-1102-1-ND"
+			(at 91.44 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b2c0c2dc-7594-4da9-bec4-4360a26fe8a4")
+		)
+		(pin "2"
+			(uuid "6a036395-2d7c-4235-9869-e85268bbd372")
+		)
+		(instances
+			(project "Toolhead Board"
+				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
+					(reference "C19")
+					(unit 1)
+				)
+			)
+			(project "magn_angle_sensor_v2"
+				(path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
+					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 48.26 43.18 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a186064b-b2ba-4bad-a7db-b029e150f3d9")
+		(property "Reference" "C22"
+			(at 48.26 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47p"
+			(at 48.26 48.26 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 52.07 44.1452 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 48.26 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 48.26 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "311-4037-1-ND"
+			(at 48.26 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d3bf5ff8-fce8-4eb3-8eca-d03b0e94bb16")
+		)
+		(pin "2"
+			(uuid "edf6c56d-9e41-41cc-a30f-9bdea7637a7a")
+		)
+		(instances
+			(project "Toolhead Board"
+				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
+					(reference "C22")
+					(unit 1)
+				)
+			)
+			(project "can_magnetic_angle_sensor"
+				(path "/d66941a0-1ce5-4d2b-a54d-b4aa566c6893"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+			(project "magn_angle_sensor_v2"
+				(path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
+					(reference "C24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 161.29 40.64 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a6d0f8b3-cc17-4643-aefd-6f4282b6a70a")
+		(property "Reference" "#PWR050"
+			(at 167.64 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 165.1 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.29 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 161.29 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "083c8cf1-3117-420c-ae2f-01feca3c5624")
+		)
+		(instances
+			(project "Toolhead Board"
+				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
+					(reference "#PWR050")
+					(unit 1)
+				)
+			)
+			(project "magn_angle_sensor_v2"
+				(path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 118.11 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a938e468-dcc0-4bc6-8fb1-3d52e8eebe8e")
+		(property "Reference" "C23"
+			(at 123.19 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 123.19 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 119.0752 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 118.11 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "1276-1935-1-ND"
+			(at 118.11 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fd1b3ba7-6c96-450c-b3ef-b27255cb5272")
+		)
+		(pin "2"
+			(uuid "72a55ad5-63aa-4393-b105-2d6ed17a9e87")
+		)
+		(instances
+			(project "Toolhead Board"
+				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
+					(reference "C23")
+					(unit 1)
+				)
+			)
+			(project "magn_angle_sensor_v2"
+				(path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
+					(reference "C22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Interface_CAN_LIN:SN65HVD1050D")
+		(at 102.87 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b159988b-0184-4f0a-be9a-2128668b2e6b")
+		(property "Reference" "U5"
+			(at 97.79 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SN65HVD1050D"
+			(at 99.06 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.87 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn65hvd1050.pdf"
+			(at 100.33 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 102.87 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "296-19416-5-ND"
+			(at 102.87 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aa43d260-5139-4c41-a7d6-76ab99f0c566")
+		)
+		(pin "2"
+			(uuid "61148c7a-fa81-4463-a1ad-6bf7070af672")
+		)
+		(pin "3"
+			(uuid "a3011c4b-ea63-4a40-b1ba-4ed183224b91")
+		)
+		(pin "4"
+			(uuid "009dedee-9ed1-4648-b431-8eda1ae5b32f")
+		)
+		(pin "5"
+			(uuid "3f4f4f1a-d60d-4ef2-ac9a-d08addfe2a5f")
+		)
+		(pin "6"
+			(uuid "69276d73-dbfe-4ec0-aa7a-e37838a6e267")
+		)
+		(pin "7"
+			(uuid "ee6175c8-8387-421b-b77d-648a98d7a8c0")
+		)
+		(pin "8"
+			(uuid "28da2e27-c558-4137-8f85-7f9f6cd2b898")
+		)
+		(instances
+			(project "Toolhead Board"
+				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+			(project "magn_angle_sensor_v2"
+				(path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
+					(reference "U6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 48.26 35.56 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c9633786-9d22-441d-9c4c-cdfca27a0006")
+		(property "Reference" "C21"
+			(at 48.26 27.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47p"
+			(at 48.26 30.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 52.07 34.5948 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 48.26 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 48.26 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "311-4037-1-ND"
+			(at 48.26 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "47e05837-0f0c-43c7-a911-ebc0d99f63db")
+		)
+		(pin "2"
+			(uuid "aea9c93c-888e-4e61-a04c-7d7b98d0435c")
+		)
+		(instances
+			(project "Toolhead Board"
+				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
+					(reference "C21")
+					(unit 1)
+				)
+			)
+			(project "can_magnetic_angle_sensor"
+				(path "/d66941a0-1ce5-4d2b-a54d-b4aa566c6893"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+			(project "magn_angle_sensor_v2"
+				(path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
+					(reference "C23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 102.87 30.48 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cde27fe0-f6c5-4b0d-9248-a77fa03c59a3")
+		(property "Reference" "#PWR049"
+			(at 99.06 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 106.68 30.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.87 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 102.87 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4d3e3b08-4011-4688-be43-85ffadf0cee4")
+		)
+		(instances
+			(project "Toolhead Board"
+				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
+					(reference "#PWR049")
+					(unit 1)
+				)
+			)
+			(project "magn_angle_sensor_v2"
+				(path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 102.87 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d6b9ce42-e46a-4b0d-81f8-f52705ed1a80")
+		(property "Reference" "#PWR052"
+			(at 102.87 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 102.87 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.87 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 102.87 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "859deb04-cf4b-4eeb-b6e2-86542ed364a8")
+		)
+		(instances
+			(project "Toolhead Board"
+				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
+					(reference "#PWR052")
+					(unit 1)
+				)
+			)
+			(project "magn_angle_sensor_v2"
+				(path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 102.87 22.86 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "deb43597-d52d-4096-a8da-01aceb200b6c")
+		(property "Reference" "#PWR048"
+			(at 102.87 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 102.87 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.87 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 102.87 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "74de4b6f-bcab-4ba7-97de-4abb2aa77f2c")
+		)
+		(instances
+			(project "Toolhead Board"
+				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
+					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+			(project "magn_angle_sensor_v2"
+				(path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 27.94 59.69 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f0feb500-dc59-48da-84e1-c813a4b06f4a")
+		(property "Reference" "J7"
+			(at 27.94 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 27.94 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 27.94 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 27.94 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 27.94 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "1738-1436-ND"
+			(at 27.94 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f91c5a4e-be3a-40ba-9c83-127a332239cf")
+		)
+		(pin "2"
+			(uuid "e616974e-aaa8-485f-9034-6d973d48b3e3")
+		)
+		(instances
+			(project "Toolhead Board"
+				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
+					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "symbols:PESD1CAN_215")
+		(at 138.43 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f2f27245-f8b7-4e10-8c6a-70ef7713a496")
+		(property "Reference" "CR1"
+			(at 149.86 30.48 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "PESD1CAN_215"
+			(at 149.86 33.02 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "PESD1CAN_215"
+			(at 138.43 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 138.43 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "5272-PESD1CANCT-ND"
+			(at 138.43 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1fca90ee-70e9-4abb-95f4-994dd1c90915")
+		)
+		(pin "2"
+			(uuid "e3c54252-2ac9-4dd6-95f9-1c026149fd3b")
+		)
+		(pin "3"
+			(uuid "9dc59b4f-6e4b-46a6-bfe8-512994ad0a06")
+		)
+		(instances
+			(project "Toolhead Board"
+				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/ddf7d789-b89f-4838-a0de-61c290d748de"
+					(reference "CR1")
+					(unit 1)
+				)
+			)
+			(project "magn_angle_sensor_v2"
+				(path "/f7dd46fe-2ecb-430c-955f-2b30ea53e447"
+					(reference "CR1")
+					(unit 1)
+				)
+			)
+		)
+	)
 )
