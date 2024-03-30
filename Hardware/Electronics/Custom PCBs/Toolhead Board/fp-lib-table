@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "lib")(type "KiCad")(uri "C:/Users/chpax/Documents/Projects/Lyra (ME102B Project)/Hardware/Electronics/Custom PCBs/lib")(options "")(descr ""))
+  (lib (name "usb_port")(type "KiCad")(uri "C:/Users/chpax/Documents/Projects/Lyra (ME102B Project)/Hardware/Electronics/Custom PCBs/lib/usb_port.pretty")(options "")(descr ""))
+)

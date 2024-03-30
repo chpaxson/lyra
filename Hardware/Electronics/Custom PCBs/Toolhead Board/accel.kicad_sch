@@ -1668,7 +1668,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 111.76 26.67 0)
 			(effects
 				(font
@@ -1741,7 +1741,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 41.91 39.37 0)
 			(effects
 				(font
@@ -1811,7 +1811,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 141.9352 53.34 0)
 			(effects
 				(font
@@ -1888,7 +1888,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BMI270_BOS"
+		(property "Footprint" "Package_LGA:Bosch_LGA-14_3x2.5mm_P0.5mm"
 			(at 62.23 43.18 0)
 			(effects
 				(font
