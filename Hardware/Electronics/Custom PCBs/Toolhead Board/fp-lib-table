@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "lib")(type "KiCad")(uri "C:/Users/chpax/Documents/Projects/Lyra (ME102B Project)/Hardware/Electronics/Custom PCBs/lib")(options "")(descr ""))
   (lib (name "usb_port")(type "KiCad")(uri "C:/Users/chpax/Documents/Projects/Lyra (ME102B Project)/Hardware/Electronics/Custom PCBs/lib/usb_port.pretty")(options "")(descr ""))
+  (lib (name "Library")(type "KiCad")(uri "${KIPRJMOD}/Library.pretty")(options "")(descr ""))
 )
