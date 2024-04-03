@@ -868,7 +868,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "power-flag"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(effects
 					(font
@@ -919,7 +919,7 @@
 				(pin power_in line
 					(at 0 0 90)
 					(length 0) hide
-					(name "+3V3"
+					(name "+3.3V"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5149,77 +5149,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 62.23 137.16 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1711a4f5-5217-4640-a0e0-4bf336de9ad8")
-		(property "Reference" "#PWR0116"
-			(at 62.23 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 62.611 132.7658 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 62.23 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 62.23 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 62.23 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a0168ff8-b6da-47d9-bff5-5c05836eb703")
-		)
-		(instances
-			(project "view_base"
-				(path "/5edcefbe-9766-42c8-9529-28d0ec865573"
-					(reference "#PWR0116")
-					(unit 1)
-				)
-			)
-			(project "Toolhead Board"
-				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
-					(reference "#PWR085")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 45.72 127 90)
 		(unit 1)
@@ -5491,77 +5420,6 @@
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
 					(reference "C33")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 60.96 19.05 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "20653459-30fb-456e-91ad-cf542a422668")
-		(property "Reference" "#PWR0116"
-			(at 60.96 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 61.341 14.6558 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 60.96 19.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 60.96 19.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 60.96 19.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fd66192c-4c03-440b-846a-6b8303032dec")
-		)
-		(instances
-			(project "view_base"
-				(path "/5edcefbe-9766-42c8-9529-28d0ec865573"
-					(reference "#PWR0116")
-					(unit 1)
-				)
-			)
-			(project "Toolhead Board"
-				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
-					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -5953,6 +5811,72 @@
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
 					(reference "#PWR075")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 60.96 19.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "365d633e-439f-4b64-92c5-92486621d9cc")
+		(property "Reference" "#PWR047"
+			(at 60.96 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 60.96 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 60.96 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2e65c5af-9773-4165-ba19-944d15c80d28")
+		)
+		(instances
+			(project "Toolhead Board"
+				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -7027,77 +6951,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 60.96 77.47 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "66ad7ad0-2448-498f-a730-c1ccfd269aee")
-		(property "Reference" "#PWR0116"
-			(at 60.96 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 61.341 73.0758 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 60.96 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 60.96 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 60.96 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "480fa48c-0f66-4e36-92c3-fd4962531968")
-		)
-		(instances
-			(project "view_base"
-				(path "/5edcefbe-9766-42c8-9529-28d0ec865573"
-					(reference "#PWR0116")
-					(unit 1)
-				)
-			)
-			(project "Toolhead Board"
-				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
-					(reference "#PWR077")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GNDA")
 		(at 113.03 157.48 0)
 		(unit 1)
@@ -7163,6 +7016,72 @@
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
 					(reference "#PWR087")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 62.23 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6948015c-ca51-4093-8968-049a440f3c91")
+		(property "Reference" "#PWR077"
+			(at 62.23 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 62.23 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 62.23 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 62.23 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 62.23 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5d8e5481-580b-447a-a5fa-36f41abf26a8")
+		)
+		(instances
+			(project "Toolhead Board"
+				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
+					(reference "#PWR077")
 					(unit 1)
 				)
 			)
@@ -8534,6 +8453,72 @@
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
 					(reference "C35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 60.96 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aba0b648-04ff-49a9-977e-59aa975bd48b")
+		(property "Reference" "#PWR067"
+			(at 60.96 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 60.96 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 60.96 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "898c103d-643d-44bd-b28f-c1afdbed4ced")
+		)
+		(instances
+			(project "Toolhead Board"
+				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
