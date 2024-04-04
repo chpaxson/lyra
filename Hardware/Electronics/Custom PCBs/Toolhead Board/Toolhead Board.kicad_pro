@@ -227,14 +227,6 @@
         {
           "diameter": 0.6,
           "drill": 0.3
-        },
-        {
-          "diameter": 0.8,
-          "drill": 0.4
-        },
-        {
-          "diameter": 1.2,
-          "drill": 0.6
         }
       ],
       "zones_allow_external_fillets": false
@@ -601,7 +593,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "../../../../../../../Downloads/",
+    "plot_directory": "./",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
