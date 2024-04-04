@@ -1586,7 +1586,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2f1ee07e-b1ce-402b-8331-04301f41e539")
-		(property "Reference" "#PWR099"
+		(property "Reference" "#PWR098"
 			(at 53.34 58.42 0)
 			(effects
 				(font
@@ -1637,7 +1637,7 @@
 		(instances
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/7be2b1b8-8861-4283-9878-3fb2e6cb9107"
-					(reference "#PWR099")
+					(reference "#PWR098")
 					(unit 1)
 				)
 			)
@@ -2066,7 +2066,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "717ab744-8f4f-4bff-a9f3-9b2441da097c")
-		(property "Reference" "#PWR094"
+		(property "Reference" "#PWR093"
 			(at 41.91 39.37 0)
 			(effects
 				(font
@@ -2116,7 +2116,7 @@
 		(instances
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/7be2b1b8-8861-4283-9878-3fb2e6cb9107"
-					(reference "#PWR094")
+					(reference "#PWR093")
 					(unit 1)
 				)
 			)
@@ -2211,7 +2211,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "89541754-fdb0-4a83-bf08-4e798581eb45")
-		(property "Reference" "#PWR095"
+		(property "Reference" "#PWR094"
 			(at 140.97 49.53 0)
 			(effects
 				(font
@@ -2261,7 +2261,7 @@
 		(instances
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/7be2b1b8-8861-4283-9878-3fb2e6cb9107"
-					(reference "#PWR095")
+					(reference "#PWR094")
 					(unit 1)
 				)
 			)
@@ -2277,7 +2277,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b3b4cce5-c746-4886-aa8e-1565063b6f2b")
-		(property "Reference" "#PWR0100"
+		(property "Reference" "#PWR099"
 			(at 101.6 58.42 0)
 			(effects
 				(font
@@ -2328,7 +2328,7 @@
 		(instances
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/7be2b1b8-8861-4283-9878-3fb2e6cb9107"
-					(reference "#PWR0100")
+					(reference "#PWR099")
 					(unit 1)
 				)
 			)
@@ -2344,7 +2344,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c130cb68-210c-40a4-b0b6-19ceb3583992")
-		(property "Reference" "#PWR097"
+		(property "Reference" "#PWR096"
 			(at 63.5 53.34 0)
 			(effects
 				(font
@@ -2395,7 +2395,7 @@
 		(instances
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/7be2b1b8-8861-4283-9878-3fb2e6cb9107"
-					(reference "#PWR097")
+					(reference "#PWR096")
 					(unit 1)
 				)
 			)
@@ -2411,7 +2411,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cce5afa3-72a5-4cc9-9883-3dbdf516280d")
-		(property "Reference" "#PWR096"
+		(property "Reference" "#PWR095"
 			(at 41.91 57.15 0)
 			(effects
 				(font
@@ -2461,7 +2461,7 @@
 		(instances
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/7be2b1b8-8861-4283-9878-3fb2e6cb9107"
-					(reference "#PWR096")
+					(reference "#PWR095")
 					(unit 1)
 				)
 			)
@@ -2556,7 +2556,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f2f5d91a-39c6-4a15-9ca4-1681cc199049")
-		(property "Reference" "#PWR098"
+		(property "Reference" "#PWR097"
 			(at 140.97 59.69 0)
 			(effects
 				(font
@@ -2606,7 +2606,7 @@
 		(instances
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/7be2b1b8-8861-4283-9878-3fb2e6cb9107"
-					(reference "#PWR098")
+					(reference "#PWR097")
 					(unit 1)
 				)
 			)
@@ -2622,7 +2622,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f8215575-ce13-4fcf-87e7-c83c65050e90")
-		(property "Reference" "#PWR093"
+		(property "Reference" "#PWR092"
 			(at 111.76 26.67 0)
 			(effects
 				(font
@@ -2672,7 +2672,7 @@
 		(instances
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/7be2b1b8-8861-4283-9878-3fb2e6cb9107"
-					(reference "#PWR093")
+					(reference "#PWR092")
 					(unit 1)
 				)
 			)

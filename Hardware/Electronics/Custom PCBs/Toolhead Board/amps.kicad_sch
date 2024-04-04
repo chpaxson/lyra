@@ -5142,7 +5142,7 @@
 			)
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
-					(reference "#PWR081")
+					(reference "#PWR080")
 					(unit 1)
 				)
 			)
@@ -5490,7 +5490,7 @@
 			)
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
-					(reference "#PWR074")
+					(reference "#PWR073")
 					(unit 1)
 				)
 			)
@@ -5646,7 +5646,7 @@
 			)
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
-					(reference "#PWR090")
+					(reference "#PWR089")
 					(unit 1)
 				)
 			)
@@ -5810,7 +5810,7 @@
 			)
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
-					(reference "#PWR075")
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)
@@ -5826,7 +5826,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "365d633e-439f-4b64-92c5-92486621d9cc")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR066"
 			(at 60.96 22.86 0)
 			(effects
 				(font
@@ -5876,7 +5876,7 @@
 		(instances
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
-					(reference "#PWR047")
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -6038,7 +6038,7 @@
 			)
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
-					(reference "#PWR091")
+					(reference "#PWR090")
 					(unit 1)
 				)
 			)
@@ -6860,7 +6860,7 @@
 			)
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
-					(reference "#PWR070")
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
@@ -7015,7 +7015,7 @@
 			)
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
-					(reference "#PWR087")
+					(reference "#PWR086")
 					(unit 1)
 				)
 			)
@@ -7031,7 +7031,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6948015c-ca51-4093-8968-049a440f3c91")
-		(property "Reference" "#PWR077"
+		(property "Reference" "#PWR084"
 			(at 62.23 140.97 0)
 			(effects
 				(font
@@ -7081,7 +7081,7 @@
 		(instances
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
-					(reference "#PWR077")
+					(reference "#PWR084")
 					(unit 1)
 				)
 			)
@@ -7152,7 +7152,7 @@
 			)
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
-					(reference "#PWR072")
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -7307,7 +7307,7 @@
 			)
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
-					(reference "#PWR092")
+					(reference "#PWR091")
 					(unit 1)
 				)
 			)
@@ -7471,7 +7471,7 @@
 			)
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
-					(reference "#PWR086")
+					(reference "#PWR085")
 					(unit 1)
 				)
 			)
@@ -7627,7 +7627,7 @@
 			)
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
-					(reference "#PWR079")
+					(reference "#PWR078")
 					(unit 1)
 				)
 			)
@@ -7698,7 +7698,7 @@
 			)
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
-					(reference "#PWR088")
+					(reference "#PWR087")
 					(unit 1)
 				)
 			)
@@ -7853,7 +7853,7 @@
 			)
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
-					(reference "#PWR084")
+					(reference "#PWR083")
 					(unit 1)
 				)
 			)
@@ -8195,7 +8195,7 @@
 			)
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
-					(reference "#PWR071")
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -8359,7 +8359,7 @@
 			)
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
-					(reference "#PWR080")
+					(reference "#PWR079")
 					(unit 1)
 				)
 			)
@@ -8468,7 +8468,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aba0b648-04ff-49a9-977e-59aa975bd48b")
-		(property "Reference" "#PWR067"
+		(property "Reference" "#PWR076"
 			(at 60.96 81.28 0)
 			(effects
 				(font
@@ -8518,7 +8518,7 @@
 		(instances
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
-					(reference "#PWR067")
+					(reference "#PWR076")
 					(unit 1)
 				)
 			)
@@ -8589,7 +8589,7 @@
 			)
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
-					(reference "#PWR083")
+					(reference "#PWR082")
 					(unit 1)
 				)
 			)
@@ -9276,7 +9276,7 @@
 			)
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
-					(reference "#PWR069")
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -9438,7 +9438,7 @@
 			)
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
-					(reference "#PWR082")
+					(reference "#PWR081")
 					(unit 1)
 				)
 			)
@@ -10256,7 +10256,7 @@
 			)
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
-					(reference "#PWR076")
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
@@ -10401,7 +10401,7 @@
 			)
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
-					(reference "#PWR068")
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -10656,7 +10656,7 @@
 			)
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
-					(reference "#PWR078")
+					(reference "#PWR077")
 					(unit 1)
 				)
 			)
@@ -11139,7 +11139,7 @@
 			)
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
-					(reference "#PWR073")
+					(reference "#PWR072")
 					(unit 1)
 				)
 			)
@@ -11303,7 +11303,7 @@
 			)
 			(project "Toolhead Board"
 				(path "/a1747683-152e-4245-ab61-2d33ce6021ef/fe3b39b1-861f-4ade-961f-d72da0b86b52"
-					(reference "#PWR089")
+					(reference "#PWR088")
 					(unit 1)
 				)
 			)
