@@ -1,0 +1,50 @@
+Partner 1 Name: Charles Paxson,Partner 1 Email: chpaxson@berkeley.edu,Partner 2 Name: David Gonzalez,Partner 2 Email: davgon612@berkeley.edu,,,,,,,,
+,,,,,,,,,,,
+"We filled out the ""Multiple"" column for a few components that we already have some of.",,,,,,,,,,,Total Price for Project
+,,,,,,,,,,,$136.75
+"Qty
+(for 1 board)",Manufacturer Part #,Digi-key Part#/SKU,Mouser Part#/SKU,Price/unit ($),Purchase URL,"Reference
+Designator","Description
+(include component value if applicable)",Datasheet Link,Multiple,Total Qty,Total Price/part ($)
+1,GMC21X7R105K50NT,4713-GMC21X7R105K50NTCT-ND,,$0.16,https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC21X7R105K50NT/21801997?s=N4IgTCBcDaICwHYCMBmAtAcQLIGExIA0EAlJABgFYBpCsgOQBUcG06AREAXQF8g,C1,1 uF (50V) 0805 Capacitor,,3,3,$0.48
+5,CL10A105KA8NNNC,1276-1102-1-ND,,$0.03,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10A105KA8NNNC/3886760?s=N4IgTCBcDaIIxgOwDYC0c4AYztQOQBEQBdAXyA,C2-C6,1 uF (25V) 0603 Capacitor,,3,15,$0.45
+29,CL10B104KB8NNWC,1276-1935-1-ND,,$0.01,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B104KB8NNWC/3887593?s=N4IgTCBcDaIIxgOwDYC0cCcBmArO1AcgCIgC6AvkA,"C7-C16, C19, C20, C25, C26, C29, C31, C33, C35-C37, C39, C41-C43, C45, C47-C50",100 nF (50V) 0603 Capacitor,,3,87,$0.89
+5,KGM15ACG1C220KT,478-KGM15ACG1C220KTCT-ND,,$0.03,https://www.digikey.com/en/products/detail/kyocera-avx/KGM15ACG1C220KT/1600461?s=N4IgTCBcDaICwHYAcBaA0gcQLIEYCsAggMIY5FhgAMaAKkTSgHIAiIAugL5A,"C17, C18, C23, C24",22 pF (16V) 0603 Capacitor,,3,15,$0.42
+5,CC0603KRNPO9BN470,311-4037-1-ND,,$0.05,https://www.digikey.com/en/products/detail/yageo/CC0603KRNPO9BN470/5883714?s=N4IgTCBcDaIMwEYEFoAsAGOB2ZKByAIiALoC%2BQA,"C21, C22",47 pF (50V) 0603 Capacitor,,3,15,$0.74
+1,ECA-1HM101,P5182-ND,,$0.39,https://www.digikey.com/en/products/detail/panasonic-electronic-components/ECA-1HM101/245041,C27,100 uF (50V) Radial Capacitor,,3,3,$1.17
+1,0603B223K500CT,1292-1417-1-ND,,$0.10,https://www.digikey.com/en/products/detail/walsin-technology-corporation/0603B223K500CT/9354914?s=N4IgTCBcDaIIxgJxgLRwCxwOxpQOQBEQBdAXyA,C28,22 pF (50V) 0603 Capacitor,,3,3,$0.30
+1,CL10A475KP8NNNC,1276-1044-1-ND,,$0.10,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10A475KP8NNNC/3886702?s=N4IgTCBcDaIIxgOwDYC0cAMAWL7UDkAREAXQF8g,C30,4.7 uF (10V) 0603 Capacitor,,3,3,$0.30
+9,CL21A106KAYNNNE,1276-2891-1-ND,,$0.12,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21A106KAYNNNE/3888549?s=N4IgTCBcDaIIxgOwDYC0YAcBOOrcDkAREAXQF8g,"C32, C34, C38, C40, C44, C46, C51-C53",10 uF (25V) 0805 Capacitor,,3,27,$3.29
+1,PESD1CAN,5272-PESD1CANCT-ND,,$0.36,https://www.digikey.com/en/products/detail/evvo/PESD1CAN/22482013?s=N4IgTCBcDaIKxgOxgLQAUCiBlAIgRgGEBBAOQIBUUScQBdAXyA,CR1,CAN ESD Protection Diode,,3,3,$1.08
+1,QTLP650D4TR,1080-1419-1-ND,,$0.41,https://www.digikey.com/en/products/detail/everlight-electronics-co-ltd/QTLP650D4TR/2675910,D1,Indicator LED,,5,5,$2.05
+1,DX07S016JA1R1500,670-DX07S016JA1R1500TR-ND,,$1.80,https://www.digikey.com/en/products/detail/jae-electronics/dx07s016ja1r1500/11585731,J1,USB Port,,3,3,$5.40
+2,PPTC042LFBN-RC,S7072-ND,,$0.68,https://www.digikey.com/en/products/detail/sullins-connector-solutions/PPTC042LFBN-RC/810211,"J2, J6","2x4 0.1"" Female Pin Header",,3,6,$4.08
+3,PPTC082LFBN-RC,S7076-ND,,$1.00,https://www.digikey.com/en/products/detail/sullins-connector-solutions/PPTC082LFBN-RC/810214,J3-J5,"2x8 0.1"" Female Pin Header",,3,9,$9.00
+1,B2B-PH-K-S,455-1704-ND,,$0.19,https://www.digikey.com/en/products/detail/jst-sales-america-inc/B2B-PH-K-S/926611,J7,JST-PH 1x2 - CAN Input,,3,3,$0.57
+1,61300211121,732-5315-ND,,$0.13,https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300211121/4846823?s=N4IgTCBcDaIOwGYwFoCsCCMrkDkAiIAugL5A,J8,"1x2 0.1"" Male Pin Header",,3,3,$0.39
+1,FIT0586,1738-1436-ND,,$1.90,https://www.digikey.com/en/products/detail/dfrobot/FIT0586/9559255?s=N4IgTCBcDaIIwHYDMAOAtHALEgbGgcgCIgC6AvkA,J9,XT30 - 24V Input,,3,3,$5.70
+3,MLZ2012A3R3WTD25,445-16375-1-ND,,$0.15,https://www.digikey.com/en/products/detail/tdk-corporation/MLZ2012A3R3WTD25/4743187?s=N4IgjCBcpgTGBOKoDGUBmBDANgZwKYA0IA9lANrgAsADFWAOwgC6xADgC5QgDKHATgEsAdgHMQAX2JwEEaCDSQseIqQogAzAg2wkrEJ258hYycVg0AHE3mLlBYmUiUNAOg0ACAK0AJFuy5IEABVYUEOAHl0AFl8TFwAV358MxAAWiRbKAEE1SdKCGYpdNhkBWz%2BXMd1AFYWCWLS5xARABMElA4Sfg8rGjqioA,L1-L3,3.3 uH (450mA) 0805 Inductor,,3,9,$1.35
+3,MMBT4403LT1G,MMBT4403LT1GOSCT-ND,,$0.09,https://www.digikey.com/en/products/detail/onsemi/MMBT4403LT1G/919609?s=N4IgTCBcDaILJwEIBUAsqAMBmAMsgjAOIDyAygMLIC0AcgCIgC6AvkA,Q1-Q3,PNP transistor (40V),,3,9,$0.83
+12,RMCF2512JT330R,RMCF2512JT330RCT-ND,,$0.12,https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF2512JT330R/1756968?s=N4IgTCBcDaIEoFkDCAxMBWAjGAUgFQGYCAGOJPAWgDkAREAXQF8g,R1-R12,330Ω (1W) resistor,,3,36,$4.25
+15,WR06X103 JTL,1292-WR06X103JTLCT-ND,,$0.01,https://www.digikey.com/en/products/detail/walsin-technology-corporation/WR06X103-JTL/13239132?s=N4IgTCBcDaIIxgJxgLQHUBKAGAbADTiwGYApAFQBkBhMlAOQBEQBdAXyA,"R13-R15, R22-R24, R29, R33, R37, R43, R46, R49-R52",10kΩ (0.1W) resistor,,3,45,$0.54
+2,RC0603FR-071KL,311-1.00KHRCT-ND,,$0.10,https://www.digikey.com/en/products/detail/yageo/RC0603FR-071KL/726843?s=N4IgTCBcDaIMwEYEFoEDoAMGDSAJASgMIAqyAcgCIgC6AvkA,"R16, R17",1kΩ (0.1W) resistor,,3,6,$0.60
+2,RC0603FR-075K1L,311-5.10KHRCT-ND,,$0.10,https://www.digikey.com/en/products/detail/yageo/RC0603FR-075K1L/727268?s=N4IgTCBcDaIMwEYEFoCsA6BAGA0gCQCUBhAFWQDkAREAXQF8g,"R18, R19",5.1kΩ (0.1W) resistor,,3,6,$0.60
+2,RMCF0603FT27R4,RMCF0603FT27R4CT-ND,,$0.10,https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT27R4/1760819?s=N4IgTCBcDaIEoFkDCAxADANjQZhQFTAHY4AWJPAWgDkAREAXQF8g,"R20, R21",27.4Ω (0.1W) resistor,,3,6,$0.60
+1,RMCF0603FT120R,RMCF0603FT120RCT-ND,,$0.10,https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT120R/1761221?s=N4IgTCBcDaIEoFkDCAxADANjQZhQFQEYw04k8BaAOQBEQBdAXyA,R25,120Ω (0.1W) resistor,,3,3,$0.30
+11,RC0603FR-07100RL,311-100HRCT-ND,,$0.02,https://www.digikey.com/en/products/detail/yageo/RC0603FR-07100RL/726888?s=N4IgTCBcDaIMwEYEFoEAY0AkBKBhAKsgHIAiIAugL5A,"R28, R31, R32, R35, R36, R39, R40, R44, R45, R47, R48",100Ω (0.1W) resistor,,3,33,$0.63
+3,RC0603JR-078K2L,311-8.2KGRCT-ND,,$0.02,https://www.digikey.com/en/products/detail/yageo/RC0603JR-078K2L/726830?s=N4IgTCBcDaIMwEYEFoAcA6MBpA4gJQGEAVZAOQBEQBdAXyA,"R30, R34, R38",8.2kΩ (0.1W) resistor,,3,9,$0.14
+4,RMCF0603FT2K20,RMCF0603FT2K20CT-ND,,$0.02,https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT2K20/1760987,"R41, R42, R53, R54",2.2kΩ (0.1W) resistor,,3,12,$0.18
+2,CG0603MLC-3.3LE,CG0603MLC-3.3LECT-ND,,$0.37,https://www.digikey.com/en/products/detail/bourns-inc/CG0603MLC-3-3LE/1788366?s=N4IgTCBcDaIMIHEAMA2JBmAsgGTgWnQDp1sBROAFTwDkAREAXQF8g,"RV1, RV2",Thermistor ESD Protection 0603 Varistor,,3,6,$2.22
+2,B3U-1000P,SW1020CT-ND,,$1.02,https://www.digikey.com/en/products/detail/omron-electronics-inc-emc-div/B3U-1000P/1534338?s=N4IgTCBcDaIMoHUCMAGMKDCAVAtAOQBEQBdAXyA,SW1-2,RESET and BOOTSEL buttons,,3,6,$6.12
+1,LD1085V50,497-3436-5-ND,,$1.77,https://www.digikey.com/en/products/detail/stmicroelectronics/LD1085V50/669220?s=N4IgTCBcDaICwE4DsBaAzHNA2FBWFAcgCIgC6AvkA,U1,24V -> 5V (3A) LDO,,2,2,$3.54
+1,LD1117AV33,497-1485-5-ND,,$0.79,https://www.digikey.com/en/products/detail/stmicroelectronics/LD1117AV33/586006,U2,5V -> 3.3V (1A) LDO,,2,2,$1.58
+1,SC0914(13),2648-SC0914(13)CT-ND,,$0.70,https://www.digikey.com/en/products/detail/raspberry-pi/SC0914-13/14306010?s=N4IgTCBcDa4GwBYAcBaAygYQAwE4CMCAFHgMwCUGAKigHIAiIAugL5A,U3,RP2040 MCU,,2,2,$1.40
+1,W25Q128JVSIQ,W25Q128JVSIQ-ND,,$1.73,https://www.digikey.com/en/products/detail/winbond-electronics/W25Q128JVSIQ/5803943?s=N4IgTCBcDaIOpgKwEUCMYAcApAagZQElkBaAOQBEQBdAXyA,U4,128MB Flash Module,,2,2,$3.46
+1,MCP25625T-E/ML,MCP25625T-E/MLCT-ND,,$3.38,https://www.digikey.com/en/products/detail/microchip-technology/MCP25625T-E-ML/4860099,U5,CAN Controller+Transceiver,,2,2,$6.76
+1,TMC2209-LA,505-TMC2209-LA-ND,,$2.47,https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/TMC2209-LA/10249904?s=N4IgTCBcDaIKwAY4FoAqBZAwmMCCcyAMgILIByAIiALoC%2BQA,U6,Stepper Driver,,3,3,$7.41
+1,B07SGPX7ZH,,,$8.29,https://www.amazon.com/dp/B07SGPX7ZH,U7-U9,Load Cell Amplifiers,,2,2,$16.58
+1,BMI270,828-1091-1-ND,,$5.88,https://www.digikey.com/en/products/detail/bosch-sensortec/BMI270/9974486?s=N4IgTCBcDaIBxjgWgIwAYCcLVIHIBEQBdAXyA,U10,Accelerometer,,3,3,$17.64
+2,3141-G20N06D52CT-ND,3141-G20N06D52CT-ND,,$0.68,https://www.digikey.com/en/products/detail/goford-semiconductor/G20N06D52/16394406?s=N4IgTCBcDaIMwEYAsCC0BxMAGAclgbACICsYAwgCqo6EgC6AvkA,U11-12,MOSFET,,3,6,$4.08
+1,"PCA9685BS,118",568-5305-1-ND,,$2.97,https://www.digikey.com/en/products/detail/nxp-usa-inc/PCA9685BS-118/2530421?s=N4IgTCBcDaIKwDYAcBaOBmADHFBGFAcgCIgC6AvkA,U13,PWM Controller,,3,3,$8.91
+1,ECS-2033-120-BN,XC1426CT-ND,,$0.76,https://www.digikey.com/en/products/detail/ecs-inc/ECS-2033-120-BN/1693366?s=N4IgTCBcDaIBoGECMAWMA2BAVAtAOQBEQBdAXyA,Y1,MCU Oscillator (12MHz),,3,3,$2.28
+1,ECS-2033-160-BN,XC1430CT-ND,,$2.82,https://www.digikey.com/en/products/detail/ecs-inc/ECS-2033-160-BN/1693370,Y2,CAN Controller Oscillator (16MHz),,3,3,$8.46
