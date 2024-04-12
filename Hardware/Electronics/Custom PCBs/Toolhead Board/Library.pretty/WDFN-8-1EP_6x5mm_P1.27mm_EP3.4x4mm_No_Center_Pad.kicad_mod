@@ -64,28 +64,6 @@
 		)
 	)
 	(attr smd)
-	(fp_rect
-		(start -0.4625 -1.905)
-		(end 2.8375 -0.6604)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(fill solid)
-		(layer "F.Cu")
-		(uuid "b2f6dc21-be78-467d-9efd-ca96aec93c42")
-	)
-	(fp_rect
-		(start -0.4625 1.905)
-		(end 2.8375 0.6604)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(fill solid)
-		(layer "F.Cu")
-		(uuid "f6d6b973-3cc3-4296-a575-5aa947ea104a")
-	)
 	(fp_line
 		(start -3 -2.61)
 		(end 3 -2.61)
@@ -117,17 +95,6 @@
 		(fill solid)
 		(layer "F.SilkS")
 		(uuid "13b9683c-309b-4b2a-a079-7879aff4033e")
-	)
-	(fp_rect
-		(start -0.4625 -1.905)
-		(end 2.8375 -0.6604)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(fill solid)
-		(layer "F.Mask")
-		(uuid "52d3b627-72ba-4920-986f-2f475853d542")
 	)
 	(fp_rect
 		(start -0.4625 1.905)
@@ -269,33 +236,53 @@
 		(roundrect_rratio 0.25)
 		(uuid "b79bd07d-63b4-4f46-a2c9-278c9d537eeb")
 	)
-	(pad "5" smd roundrect
-		(at 2.8375 1.905)
-		(size 1.025 0.45)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(roundrect_rratio 0.25)
-		(uuid "df8b6dba-f02b-46ad-bdc0-2c288730ed8e")
-	)
-	(pad "6" smd roundrect
+	(pad "5" smd custom
 		(at 2.8375 0.635)
 		(size 1.025 0.45)
 		(layers "F.Cu" "F.Paste" "F.Mask")
-		(roundrect_rratio 0.25)
-		(uuid "a90157e3-1c44-4dad-8d9d-37412878adc4")
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_rect
+				(start -3.3025 0.005)
+				(end -0.0025 1.2496)
+				(width 0.2)
+				(fill yes)
+			)
+			(gr_rect
+				(start -0.515 1.05)
+				(end 0.51 1.5)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "5f0f20a4-b82a-468f-b39b-69565e990c63")
 	)
-	(pad "7" smd roundrect
-		(at 2.8375 -0.635)
+	(pad "7" smd custom
+		(at 2.84 -1.91)
 		(size 1.025 0.45)
 		(layers "F.Cu" "F.Paste" "F.Mask")
-		(roundrect_rratio 0.25)
-		(uuid "39cf7b81-2a21-41d3-aaeb-f33558942a3f")
-	)
-	(pad "8" smd roundrect
-		(at 2.8375 -1.905)
-		(size 1.025 0.45)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(roundrect_rratio 0.25)
-		(uuid "64393aa3-0675-43dc-bb70-591ccb60c8bd")
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_rect
+				(start -3.3025 0.005)
+				(end -0.0025 1.2496)
+				(width 0.2)
+				(fill yes)
+			)
+			(gr_rect
+				(start -0.515 1.05)
+				(end 0.51 1.5)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "c3c79673-c668-4b84-8781-df7cc0df822b")
 	)
 	(model "${KICAD8_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/WDFN-8-1EP_6x5mm_P1.27mm_EP3.4x4mm.wrl"
 		(offset
