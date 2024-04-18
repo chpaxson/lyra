@@ -1,5 +1,4 @@
 #include "AA_MCP2515.h"
-#include <Stepper.h>
 /*==== CAN Bus Pins ====*/
 #define CAN_CS 53
 #define CAN_INT 21
@@ -20,14 +19,25 @@
 #define MOT5_DIR 26
 #define MOT6_DIR 27
 
-
-
 void setup() {
-  // put your setup code here, to run once:
+  // Begin Serial port
   Serial.begin(38400);
+  pinMode(MOT_EN, OUTPUT);
+  // Motor 1
+  pinMode(MOT1_STP, OUTPUT);
+  pinMode(MOT1_DIR, OUTPUT);
+
+  digitalWrite(MOT1_DIR, HIGH);
+  digitalWrite(MOT_EN, HIGH);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  digitalWrite(MOT1_STP, HIGH);
+  delay(10);
+  digitalWrite(MOT1_STP, LOW);
+  delay(10);
+
 
 }
+
+void 
