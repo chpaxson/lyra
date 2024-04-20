@@ -499,7 +499,7 @@
       "plot": "./gerbers",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "../../../../../../../Desktop/Toolhead Board.step",
       "svg": "",
       "vrml": ""
     },
