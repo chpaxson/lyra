@@ -1,5 +1,4 @@
 #include "AccelStepper.h"
-#include "MultiStepper.h"
 /*==== Motor Pins ====*/
 #define MOT_EN 13
 
@@ -29,7 +28,6 @@ AccelStepper stepper4(AccelStepper::DRIVER, MOT4_STP, MOT4_DIR);
 AccelStepper stepper5(AccelStepper::DRIVER, MOT5_STP, MOT5_DIR);
 AccelStepper stepper6(AccelStepper::DRIVER, MOT6_STP, MOT6_DIR);
 
-MultiStepper steppers;
 
 void setup() {
     // Begin Serial port
@@ -38,26 +36,20 @@ void setup() {
     pinMode(MOT_EN, OUTPUT);
     digitalWrite(MOT_EN, LOW);
 
-    steppers.addStepper(stepper1);
-    steppers.addStepper(stepper2);
-    steppers.addStepper(stepper3);
-    steppers.addStepper(stepper4);
-    steppers.addStepper(stepper5);
-    steppers.addStepper(stepper6);
     delay(5000);
     // Run a demo sequence
-    float accel_factor = 0.00001;
-    simultaneous_move_degrees(5.0, accel_factor, 60, 75, 80, 0, 0, 0);
+    float accel_factor = 2.0;
+    simultaneous_move_degrees(4.0, accel_factor, 60, 75, 80, 0, 0, 0);
     delay(100);
-    simultaneous_move_degrees(3.0, accel_factor, 75, 140, 50, 0, 0, 0);
+    simultaneous_move_degrees(2.0, accel_factor, 75, 140, 50, 0, 0, 0);
     delay(500);
-    simultaneous_move_degrees(1.0, accel_factor, 75, 130, 45, 0, 0, 0);
+    simultaneous_move_degrees(0.5, accel_factor, 75, 130, 45, 0, 0, 0);
     delay(100);
-    simultaneous_move_degrees(1.0, accel_factor, 45, 130, 45, 0, 0, 0);
+    simultaneous_move_degrees(0.5, accel_factor, 45, 130, 45, 0, 0, 0);
     delay(100);
-    simultaneous_move_degrees(1.0, accel_factor, 45, 140, 50, 0, 0, 0);
+    simultaneous_move_degrees(0.5, accel_factor, 45, 140, 50, 0, 0, 0);
     delay(500);
-    simultaneous_move_degrees(7.5, accel_factor, 0, 0, 0, 0, 0, 0);
+    simultaneous_move_degrees(4.0, accel_factor, 0, 0, 0, 0, 0, 0);
     
     
 }
@@ -89,8 +81,20 @@ void simultaneous_move_steps(float move_time, float accel_factor, int m1, int m2
     motor_step_positions[3] = m4;
     motor_step_positions[4] = m5;
     motor_step_positions[5] = m6;
-    steppers.moveTo(motor_step_positions);
-    steppers.runSpeedToPosition();
+    stepper1.moveTo(m1);
+    stepper2.moveTo(m2);
+    stepper3.moveTo(m3);
+    stepper4.moveTo(m4);
+    stepper5.moveTo(m5);
+    stepper6.moveTo(m6);
+    while (stepper1.isRunning() || stepper2.isRunning() || stepper3.isRunning() || stepper4.isRunning() || stepper5.isRunning() || stepper6.isRunning()) {
+        stepper1.run();
+        stepper2.run();
+        stepper3.run();
+        stepper4.run();
+        stepper5.run();
+        stepper6.run();
+    }
 }
 void simultaneous_move_degrees(float move_time, float accel_factor, float m1, float m2, float m3, float m4, float m5, float m6) {
     long m1_steps = m1 * steps_per_rev * gear_ratios[0] / 360;
