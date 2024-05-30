@@ -18,7 +18,7 @@
 
 const int steps_per_rev = 200 * 16;
 long motor_step_positions[] = {0, 0, 0, 0, 0, 0};
-int gear_ratios[] = {16, 24, 19, 15, 15, 15};
+float gear_ratios[] = {16.0, 24.0, 19.0, 15.0 * 80 / 65, 15.0, 15.0};
 
 // Set up stepper objects
 AccelStepper stepper1(AccelStepper::DRIVER, MOT1_STP, MOT1_DIR);
@@ -36,27 +36,34 @@ void setup() {
     pinMode(MOT_EN, OUTPUT);
     digitalWrite(MOT_EN, LOW);
 
-    delay(5000);
-    // Run a demo sequence
-    float accel_factor = 2.0;
-    simultaneous_move_degrees(4.0, accel_factor, 60, 75, 80, 0, 0, 0);
-    delay(100);
-    simultaneous_move_degrees(2.0, accel_factor, 75, 140, 50, 0, 0, 0);
-    delay(500);
-    simultaneous_move_degrees(0.5, accel_factor, 75, 130, 45, 0, 0, 0);
-    delay(100);
-    simultaneous_move_degrees(0.5, accel_factor, 45, 130, 45, 0, 0, 0);
-    delay(100);
-    simultaneous_move_degrees(0.5, accel_factor, 45, 140, 50, 0, 0, 0);
-    delay(500);
-    simultaneous_move_degrees(4.0, accel_factor, 0, 0, 0, 0, 0, 0);
-    
+    delay(2000);
     
 }
 
-void loop() {}
+void loop() {
+  float accel_factor = 8.0;
+    simultaneous_move_degrees(1.0*0.66, accel_factor, 60, 75, 80, 0, 0, 0);
+    delay(100);
+    simultaneous_move_degrees(1.0*0.66, accel_factor, 75, 140, 50, 45, 45, 0);
+    delay(100);
+    simultaneous_move_degrees(1.0*0.66, accel_factor, 75, 130, 45, 45, 0, 45);
+    delay(100);
+    simultaneous_move_degrees(1.0*0.66, accel_factor, 0, 130, 45, 0, 45, 0);
+    delay(100);
+    simultaneous_move_degrees(1.0*0.66, accel_factor, 0, 140, 50, 0, 0, 45);
+    delay(100);
+    simultaneous_move_degrees(1.0*0.66, accel_factor, 0, 140, 140, 0, 0, 0);
+    delay(100);
+    simultaneous_move_degrees(3*0.66, accel_factor, 0, 180, 180, 0, 0, 0);
+    delay(1000);
+    simultaneous_move_degrees(0.5*0.66, accel_factor, 0, 180, 180, 45, 0, 0);
+    simultaneous_move_degrees(0.5*0.66, accel_factor, 0, 180, 180, 0, 0, 0);
+    delay(100);
+    simultaneous_move_degrees(1.0*0.66, accel_factor, 0, 0, 0, 0, 0, 0);
+    delay(2000);
+}
 
-void simultaneous_move_steps(float move_time, float accel_factor, int m1, int m2, int m3, int m4, int m5, int m6) {
+void simultaneous_move_steps(float move_time, float accel_factor, long m1, long m2, long m3, long m4, long m5, long m6) {
     long m1_dist = m1 - motor_step_positions[0];
     long m2_dist = m2 - motor_step_positions[1];
     long m3_dist = m3 - motor_step_positions[2];
